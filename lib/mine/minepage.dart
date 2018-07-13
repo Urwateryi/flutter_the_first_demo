@@ -12,6 +12,7 @@ class MineState extends State<MinePage>{
   Widget build(BuildContext context) {
     return new MaterialApp(
         home: new Scaffold(
+          appBar: new AppBar(title: new Text('我的')),
           body: new Center(
               child: new Text("MINE 啦")
           ),
