@@ -6,6 +6,7 @@
 .packages
 .pub/
 build/
+idea/
 .iml
 ios/.generated/
 packages

@@ -6,11 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="89e58e43-548d-47b1-bf33-c73710d4d630" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/the_first_one.iml" afterPath="$PROJECT_DIR$/the_first_one.iml" />
-      <change beforePath="$PROJECT_DIR$/the_first_one_android.iml" afterPath="$PROJECT_DIR$/the_first_one_android.iml" />
     </list>
     <ignored path="$PROJECT_DIR$/.dart_tool/" />
     <ignored path="$PROJECT_DIR$/.idea/" />
@@ -245,7 +241,14 @@
       <option name="project" value="LOCAL" />
       <updated>1531462092021</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="添加忽略">
+      <created>1531623740823</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1531623740823</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -289,7 +292,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="使用BottomNavigationBar创建底部导航" />
-    <option name="LAST_COMMIT_MESSAGE" value="使用BottomNavigationBar创建底部导航" />
+    <MESSAGE value="添加忽略" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加忽略" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -453,8 +457,8 @@
     <entry file="file://$PROJECT_DIR$/lib/home/homepage.dart" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="9" lean-forward="true" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+        <state relative-caret-position="168">
+          <caret line="8" column="5" lean-forward="false" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
           <folding />
         </state>
       </provider>
