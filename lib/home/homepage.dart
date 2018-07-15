@@ -11,46 +11,34 @@ class HomePage extends StatefulWidget {
 class HomeState extends State<HomePage> {
   List<String> _contentList = <String>["Text", "Icon", "ListView"];
 
-  Widget _buildRow(String content) {
+  Widget _buildRow(int index) {
     return new ListTile(
-      title: new Padding(padding: new EdgeInsets.all(10.0),child: new Text(content))
-    );
+        title: new GestureDetector(
+            child: new Padding(
+                padding: new EdgeInsets.all(10.0),
+                child: new Text(_contentList[index])),
+            onTap: () {
+              Fluttertoast.showToast(
+                  msg: _contentList[index]
+              );
+            }));
   }
 
-  Widget _buildList(){
+  Widget _buildList() {
     return new ListView.builder(
         padding: const EdgeInsets.all(16.0),
-        itemBuilder:(context, i){
-          return  _buildRow(_contentList[i]);
-        }
-    );
-  }
-
-  _getListData() {
-    List<Widget> widgets = [];
-    for (int i = 0; i < _contentList.length; i++) {
-      widgets.add(
-        new GestureDetector(
-          child: new Padding(padding: new EdgeInsets.all(10.0),child: new Text(_contentList[i])),
-          onTap:(){
-            print(_contentList[i]);
-//            Fluttertoast.showToast(
-//                msg: _contentList[i],
-//                toastLength: Toast.LENGTH_SHORT,
-//                gravity: ToastGravity.CENTER,
-//            );
-          },
-        )
-      );
-    }
-    return widgets;
+        itemCount: _contentList.length * 2,
+        itemBuilder: (context, position) {
+          if (position.isOdd) return new Divider();
+          final index = position ~/ 2; //整除
+          return _buildRow(index);
+        });
   }
 
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
         home: new Scaffold(
-            appBar: new AppBar(title: new Text('首页')),
-            body: new ListView(children: _getListData())));
+            appBar: new AppBar(title: new Text('首页')), body: _buildList()));
   }
 }
