@@ -65,4 +65,24 @@ List<ComponentBean> contentList = <ComponentBean>[
       "工具类", "TextPage", "工具类的封装与使用", "assets/images/illustration_26.jpg"),
   new ComponentBean(
       "全局变量", "TextPage", "全局变量的定义与使用", "assets/images/illustration_27.jpg"),
+  new ComponentBean(
+      "DropdownButton", "TextPage", "全局变量的定义与使用", "assets/images/illustration_28.jpg"),
+  new ComponentBean(
+      "FlatButton", "TextPage", "全局变量的定义与使用", "assets/images/illustration_29.jpg"),
+  new ComponentBean(
+      "FloatingActionButton", "TextPage", "全局变量的定义与使用", "assets/images/illustration_30.jpg"),
+  new ComponentBean(
+      "IconButton", "Radio", "全局变量的定义与使用", "assets/images/illustration_31.jpg"),
+  new ComponentBean(
+      "Switch", "TextPage", "全局变量的定义与使用", "assets/images/illustration_32.jpg"),
+  new ComponentBean(
+      "TextField", "TextPage", "全局变量的定义与使用", "assets/images/illustration_33.jpg"),
+  new ComponentBean(
+      "动画", "TextPage", "全局变量的定义与使用", "assets/images/illustration_34.jpg"),
+  new ComponentBean(
+      "字体", "TextPage", "全局变量的定义与使用", "assets/images/illustration_35.jpg"),
+  new ComponentBean(
+      "盒约束", "TextPage", "全局变量的定义与使用", "assets/images/illustration_27.jpg"),
+  new ComponentBean(
+      "国际化", "TextPage", "全局变量的定义与使用", "assets/images/illustration_27.jpg"),
 ];
