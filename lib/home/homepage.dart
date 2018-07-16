@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+import 'ComponentBean.dart';
+import 'text/TextPage.dart';
+import 'package:the_first_one/utils/PageUtil.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -9,18 +12,43 @@ class HomePage extends StatefulWidget {
 }
 
 class HomeState extends State<HomePage> {
-  List<String> _contentList = <String>["Text", "Icon", "ListView"];
+  List<ComponentBean> _contentList = <ComponentBean>[
+    new ComponentBean("Container", "ContainerPage"),
+    new ComponentBean("Row", "RowPage"),
+    new ComponentBean("Column", "ColumnPage"),
+    new ComponentBean("RaisedButton", "RaisedButtonPage"),
+    new ComponentBean("Scaffold", "ScaffoldPage"),
+    new ComponentBean("FlutterLogo", "FlutterLogoPage"),
+    new ComponentBean("Placeholder", "PlaceholderPage"),
+    new ComponentBean("Appbar", "AppbarPage"),
+    new ComponentBean("Text", "TextPage"),
+    new ComponentBean("Image", "TextPage"),
+    new ComponentBean("Button", "TextPage"),
+    new ComponentBean("Input", "TextPage"),
+    new ComponentBean("CheckBox", "TextPage"),
+    new ComponentBean("RadioGroup", "TextPage"),
+    new ComponentBean("Progress", "TextPage"),
+    new ComponentBean("Slide", "TextPage"),
+    new ComponentBean("单个Item的ListView", "TextPage"),
+    new ComponentBean("多个Item的ListView", "TextPage"),
+    new ComponentBean("GridView", "TextPage"),
+    new ComponentBean("自定义控件", "TextPage"),
+    new ComponentBean("缓存", "TextPage"),
+    new ComponentBean("网络请求", "TextPage"),
+    new ComponentBean("工具类", "TextPage"),
+    new ComponentBean("全局变量", "TextPage")
+  ];
 
   Widget _buildRow(int index) {
     return new ListTile(
         title: new GestureDetector(
             child: new Padding(
                 padding: new EdgeInsets.all(10.0),
-                child: new Text(_contentList[index])),
+                child: new Text(_contentList[index].name)),
             onTap: () {
-              Fluttertoast.showToast(
-                  msg: _contentList[index]
-              );
+              Fluttertoast.showToast(msg: _contentList[index].name);
+              new PageUtil()
+                  .pushTo(context, new TextPage(_contentList[index].name));
             }));
   }
 
