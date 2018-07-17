@@ -17,10 +17,6 @@ List<ComponentBean> contentList = <ComponentBean>[
       new ContainerPage("Container"),
       "包含绘制widget、定位widget、尺寸widget的容器",
       "assets/images/illustration_1.jpg"),
-  new ComponentBean(
-      "Row", new TextPage("Row"), "横向排列内部组件", "assets/images/illustration_2.jpg"),
-  new ComponentBean(
-      "Column", new TextPage("Column"), "纵向排列内部组件", "assets/images/illustration_3.jpg"),
   new ComponentBean("RaisedButton", new TextPage("RaisedButton"), "不晓得是啥",
       "assets/images/illustration_4.jpg"),
   new ComponentBean(
@@ -70,23 +66,35 @@ List<ComponentBean> contentList = <ComponentBean>[
   new ComponentBean(
       "全局变量", new TextPage("全局变量"), "全局变量的定义与使用", "assets/images/illustration_27.jpg"),
   new ComponentBean(
-      "DropdownButton",new TextPage("DropdownButton"), "全局变量的定义与使用", "assets/images/illustration_28.jpg"),
+      "DropdownButton",new TextPage("DropdownButton"), "DropdownButton", "assets/images/illustration_28.jpg"),
   new ComponentBean(
-      "FlatButton", new TextPage("FlatButton"), "全局变量的定义与使用", "assets/images/illustration_29.jpg"),
+      "FlatButton", new TextPage("FlatButton"), "FlatButton", "assets/images/illustration_29.jpg"),
   new ComponentBean(
-      "FloatingActionButton", new TextPage("FloatingActionButton"), "全局变量的定义与使用", "assets/images/illustration_30.jpg"),
+      "FloatingActionButton", new TextPage("FloatingActionButton"), "FloatingActionButton", "assets/images/illustration_30.jpg"),
   new ComponentBean(
-      "IconButton", new TextPage("IconButton"), "全局变量的定义与使用", "assets/images/illustration_31.jpg"),
+      "IconButton", new TextPage("IconButton"), "IconButton", "assets/images/illustration_31.jpg"),
   new ComponentBean(
-      "Switch", new TextPage("Switch"), "全局变量的定义与使用", "assets/images/illustration_32.jpg"),
+      "Switch", new TextPage("Switch"), "Switch", "assets/images/illustration_32.jpg"),
   new ComponentBean(
-      "TextField", new TextPage("TextField"), "全局变量的定义与使用", "assets/images/illustration_33.jpg"),
+      "TextField", new TextPage("TextField"), "TextField", "assets/images/illustration_33.jpg"),
   new ComponentBean(
-      "动画", new TextPage("动画"), "全局变量的定义与使用", "assets/images/illustration_34.jpg"),
+      "动画", new TextPage("动画"), "动画", "assets/images/illustration_34.jpg"),
   new ComponentBean(
-      "字体", new TextPage("字体"), "全局变量的定义与使用", "assets/images/illustration_35.jpg"),
+      "字体", new TextPage("字体"), "字体", "assets/images/illustration_35.jpg"),
   new ComponentBean(
-      "盒约束", new TextPage("盒约束"), "全局变量的定义与使用", "assets/images/illustration_27.jpg"),
+      "盒约束", new TextPage("盒约束"), "盒约束", "assets/images/illustration_27.jpg"),
   new ComponentBean(
-      "国际化", new TextPage("国际化"), "全局变量的定义与使用", "assets/images/illustration_27.jpg"),
+      "国际化", new TextPage("国际化"), "国际化", "assets/images/illustration_27.jpg"),
+  new ComponentBean(
+      "质感设计", new TextPage("质感设计"), "质感设计", "assets/images/illustration_27.jpg"),
+  new ComponentBean(
+      "纸墨设计", new TextPage("纸墨设计"), "纸墨设计", "assets/images/illustration_27.jpg"),
+  new ComponentBean(
+      "Swiper", new TextPage("Swiper"), "Swiper", "assets/images/illustration_27.jpg"),
+  new ComponentBean(
+      "template", new TextPage("template"), "template", "assets/images/illustration_27.jpg"),
+  new ComponentBean(
+      "下拉刷新，上拉加载更多", new TextPage("下拉刷新，上拉加载更多"), "下拉刷新，上拉加载更多", "assets/images/illustration_27.jpg"),
+  new ComponentBean(
+      "SliverAppBar", new TextPage("SliverAppBar"), "SliverAppBar", "assets/images/illustration_27.jpg"),
 ];
