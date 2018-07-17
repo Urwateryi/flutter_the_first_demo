@@ -18,23 +18,23 @@ List<ComponentBean> contentList = <ComponentBean>[
       "包含绘制widget、定位widget、尺寸widget的容器",
       "assets/images/illustration_1.jpg"),
   new ComponentBean(
-      "Row", new ContainerPage("Row"), "横向排列内部组件", "assets/images/illustration_2.jpg"),
+      "Row", new TextPage("Row"), "横向排列内部组件", "assets/images/illustration_2.jpg"),
   new ComponentBean(
-      "Column", new ContainerPage("Column"), "纵向排列内部组件", "assets/images/illustration_3.jpg"),
-  new ComponentBean("RaisedButton", new ContainerPage("RaisedButton"), "不晓得是啥",
+      "Column", new TextPage("Column"), "纵向排列内部组件", "assets/images/illustration_3.jpg"),
+  new ComponentBean("RaisedButton", new TextPage("RaisedButton"), "不晓得是啥",
       "assets/images/illustration_4.jpg"),
   new ComponentBean(
-      "Scaffold", new ContainerPage("Scaffold"), "脚手架", "assets/images/illustration_5.jpg"),
-  new ComponentBean("FlutterLogo", new ContainerPage("FlutterLogo"), "不晓得是啥",
+      "Scaffold", new TextPage("Scaffold"), "脚手架", "assets/images/illustration_5.jpg"),
+  new ComponentBean("FlutterLogo", new TextPage("FlutterLogo"), "不晓得是啥",
       "assets/images/illustration_6.jpg"),
-  new ComponentBean("Placeholder", new ContainerPage("Placeholder"), "占位符？？？？",
+  new ComponentBean("Placeholder", new TextPage("Placeholder"), "占位符？？？？",
       "assets/images/illustration_7.jpg"),
   new ComponentBean(
-      "Appbar", new ContainerPage("Appbar"), "就是AppBar嘛", "assets/images/illustration_8.jpg"),
+      "Appbar", new TextPage("Appbar"), "就是AppBar嘛", "assets/images/illustration_8.jpg"),
   new ComponentBean(
       "Text", new TextPage("Text"), "文本控件", "assets/images/illustration_9.jpg"),
   new ComponentBean(
-      "RichText", new ContainerPage("RichText"), "文本域控件", "assets/images/illustration_10.jpg"),
+      "RichText", new TextPage("RichText"), "文本域控件", "assets/images/illustration_10.jpg"),
   new ComponentBean(
       "Image", new TextPage("Image"), "图片控件", "assets/images/illustration_11.jpg"),
   new ComponentBean(
