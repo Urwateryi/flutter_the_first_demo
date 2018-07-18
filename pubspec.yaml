@@ -17,6 +17,7 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
   fluttertoast: ^2.0.6
+  dio: ^0.1.3  #latest version
 
 dev_dependencies:
   flutter_test:
@@ -69,6 +70,10 @@ flutter:
       - assets/images/illustration_33.jpg
       - assets/images/illustration_34.jpg
       - assets/images/illustration_35.jpg
+
+      - assets/images/ic_wechat.png
+      - assets/images/ic_circle.png
+      - assets/images/ic_dot3.png
 
   # To add assets to your application, add an assets section, like this:
   # assets:
