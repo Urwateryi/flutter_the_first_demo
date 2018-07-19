@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'container/ContainerPage.dart';
 import 'text/TextPage.dart';
+import 'button/ButtonPage.dart';
 
 class ComponentBean {
   String name;
@@ -17,7 +18,7 @@ List<ComponentBean> contentList = <ComponentBean>[
       new ContainerPage("Container"),
       "包含绘制widget、定位widget、尺寸widget的容器",
       "assets/images/illustration_1.jpg"),
-  new ComponentBean("RaisedButton", new TextPage("RaisedButton"), "不晓得是啥",
+  new ComponentBean("Button", new ButtonPage(), "按钮呢",
       "assets/images/illustration_4.jpg"),
   new ComponentBean(
       "Scaffold", new TextPage("Scaffold"), "脚手架", "assets/images/illustration_5.jpg"),
