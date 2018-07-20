@@ -14,13 +14,18 @@ class ButtonPage extends StatelessWidget {
           child: new Column(
             children: <Widget>[
               const SizedBox(height: 10.0),
-              new RaisedButton(
-                onPressed: () {},
-                color: Colors.red[300],
-                child: new Text(
-                  "RaisedButton",
-                  style: new TextStyle(color: Colors.white),
+              new Material(
+                child: new RaisedButton(
+                  onPressed: () {},
+                  color: Colors.red[300],
+                  child: new Text(
+                    "RaisedButton",
+                    style: new TextStyle(color: Colors.white),
+                  ),
                 ),
+                borderRadius: BorderRadius.circular(20.0),
+                shadowColor: Colors.grey,
+                elevation: 5.0,
               ),
               const SizedBox(height: 10.0),
               new FlatButton(
@@ -85,13 +90,18 @@ class ButtonPage extends StatelessWidget {
                 label: const Text('OutlineButton.icon'),
               ),
               const SizedBox(height: 10.0),
-              new MaterialButton(
-                onPressed: () {},
-                color: Colors.red[300],
-                child: new Text(
-                  "MaterialButton",
-                  style: new TextStyle(color: Colors.white),
+              new Material(
+                child: new MaterialButton(
+                  onPressed: () {},
+                  color: Colors.red[300],
+                  child: new Text(
+                    "MaterialButton",
+                    style: new TextStyle(color: Colors.white),
+                  ),
                 ),
+                borderRadius: BorderRadius.circular(20.0),
+                shadowColor: Colors.grey,
+                elevation: 5.0,
               ),
               const SizedBox(height: 10.0),
               new RawMaterialButton(
