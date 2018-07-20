@@ -20,6 +20,7 @@ List<ComponentBean> contentList = <ComponentBean>[
       "Button", new ButtonPage(), "按钮呢", "assets/images/illustration_4.jpg"),
   new ComponentBean(
       "Text", new TextPage(), "文本控件", "assets/images/illustration_9.jpg"),
+  new ComponentBean("Image", null, "图片控件", "assets/images/illustration_11.jpg"),
   new ComponentBean(
       "Scaffold", null, "脚手架", "assets/images/illustration_5.jpg"),
   new ComponentBean(
@@ -30,7 +31,6 @@ List<ComponentBean> contentList = <ComponentBean>[
       "Appbar", null, "就是AppBar嘛", "assets/images/illustration_8.jpg"),
   new ComponentBean(
       "RichText", null, "文本域控件", "assets/images/illustration_10.jpg"),
-  new ComponentBean("Image", null, "图片控件", "assets/images/illustration_11.jpg"),
   new ComponentBean(
       "Button", null, "按钮控件", "assets/images/illustration_12.jpg"),
   new ComponentBean("Input", null, "输入框", "assets/images/illustration_13.jpg"),
