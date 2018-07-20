@@ -48,7 +48,7 @@ class TextState extends State<TextPage> {
 //              ),
             new SizedBox(
               width: 400.0,
-              height: 200.0,
+              height: 100.0,
               child: new Text(
                 "今天周五",
                 textDirection: TextDirection.ltr, //左对齐
@@ -64,7 +64,7 @@ class TextState extends State<TextPage> {
 
             new Text.rich(
               new TextSpan(
-                text: "one",
+                text: "THIS",
                 style: new TextStyle(
                   color: Colors.red,
                   fontSize: 25.0,
@@ -73,7 +73,7 @@ class TextState extends State<TextPage> {
                 ),
                 children: [
                   new TextSpan(
-                    text: "TWO",
+                    text: " IS ",
                     style: new TextStyle(
                       fontSize: 20.0,
                       color: Colors.green,
@@ -91,7 +91,7 @@ class TextState extends State<TextPage> {
                       },
                   ),
                   new TextSpan(
-                    text: "THREE",
+                    text: "TEXT ",
                     style: new TextStyle(
                       fontSize: 40.0,
                       color: Colors.black12,
@@ -101,7 +101,7 @@ class TextState extends State<TextPage> {
                     ),
                   ),
                   new TextSpan(
-                    text: "four",
+                    text: "RICH",
                     style: new TextStyle(
                       fontSize: 40.0,
                       color: Colors.green,
@@ -113,6 +113,60 @@ class TextState extends State<TextPage> {
                 ],
               ),
             ),
+
+            new RichText(
+              text: new TextSpan(
+                text: "THIS",
+                style: new TextStyle(
+                  color: Colors.red,
+                  fontSize: 25.0,
+                  decoration: TextDecoration.lineThrough,
+                  decorationStyle: TextDecorationStyle.double,
+                ),
+                children: [
+                  new TextSpan(
+                    text: " IS ",
+                    style: new TextStyle(
+                      fontSize: 20.0,
+                      color: Colors.green,
+                      decoration: TextDecoration.underline,
+                      decorationColor: Colors.purple,
+                      decorationStyle: TextDecorationStyle.wavy,
+                    ),
+                    recognizer: new TapGestureRecognizer()
+                      ..onTap = () {
+                        var alert = new AlertDialog(
+                          title: new Text("Title"),
+                          content: new Text("TWO is tapped"),
+                        );
+                        showDialog(context: context, child: alert);
+                      },
+                  ),
+                  new TextSpan(
+                    text: "RICH ",
+                    style: new TextStyle(
+                      fontSize: 40.0,
+                      color: Colors.black12,
+                      decoration: TextDecoration.overline,
+                      decorationColor: Colors.redAccent,
+                      decorationStyle: TextDecorationStyle.dashed,
+                    ),
+                  ),
+                  new TextSpan(
+                    text: "TEXT",
+                    style: new TextStyle(
+                      fontSize: 40.0,
+                      color: Colors.green,
+                      decoration: TextDecoration.lineThrough,
+                      decorationColor: Colors.yellowAccent,
+                      decorationStyle: TextDecorationStyle.dotted,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+
+
           ],
         ),
       ),

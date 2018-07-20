@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/cupertino.dart';
 
 class ButtonPage extends StatelessWidget {
   @override
@@ -102,6 +103,13 @@ class ButtonPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 10.0),
+              new CupertinoButton(
+                color: Colors.red[300],
+                pressedOpacity: 0.7,
+                borderRadius: BorderRadius.all(Radius.circular(25.0)),
+                child: new Text("CupertinoButton"),
+                onPressed: () {},
+              )
             ],
           ),
         ),
