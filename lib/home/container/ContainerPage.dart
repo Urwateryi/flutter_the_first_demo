@@ -32,7 +32,8 @@ class ContainerState extends State<ContainerPage> {
               '我不是药神：你我生而平凡 生命脆弱',
               textAlign: TextAlign.left,
               softWrap: true,
-              style: new TextStyle(color: Colors.black54, fontSize: 23.0,height: 1.3),
+              style: new TextStyle(
+                  color: Colors.black54, fontSize: 23.0, height: 1.3),
             ),
           ),
           new Container(
@@ -81,7 +82,8 @@ class ContainerState extends State<ContainerPage> {
                 new Text('阅读 5',
                     style:
                         new TextStyle(color: Colors.black54, fontSize: 13.0)),
-                new Text('随笔',
+                new Text('随笔随笔随笔随笔随笔随笔随笔随笔随笔随笔随笔随笔随笔随笔',
+                    softWrap: true,
                     style:
                         new TextStyle(color: Colors.black54, fontSize: 13.0)),
               ],
