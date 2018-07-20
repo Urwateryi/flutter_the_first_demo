@@ -3,23 +3,13 @@ import 'BottomComponent.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'Line.dart';
 
-class ContainerPage extends StatefulWidget {
-  final String content; //定义一个常量，用于保存跳转进来获取到的参数
-  ContainerPage(this.content); //构造函数，获取参数
-
-  @override
-  State<ContainerPage> createState() {
-    return new ContainerState();
-  }
-}
-
-class ContainerState extends State<ContainerPage> {
+class ContainerPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
       backgroundColor: Colors.white,
       appBar: new AppBar(
-        title: new Text(widget.content),
+        title: new Text("Container"),
         leading: new BackButton(),
       ),
       //ScrollView的效果可以通过ListView来实现
@@ -82,7 +72,7 @@ class ContainerState extends State<ContainerPage> {
                 new Text('阅读 5',
                     style:
                         new TextStyle(color: Colors.black54, fontSize: 13.0)),
-                new Text('随笔随笔随笔随笔随笔随笔随笔随笔随笔随笔随笔随笔随笔随笔',
+                new Text('随笔',
                     softWrap: true,
                     style:
                         new TextStyle(color: Colors.black54, fontSize: 13.0)),
