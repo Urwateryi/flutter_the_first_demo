@@ -74,7 +74,7 @@ class TextPage extends StatelessWidget {
                     recognizer: new TapGestureRecognizer()
                       ..onTap = () {
                         var alert = new AlertDialog(
-                          title: new Text("Title"),
+                          title: new Text("onTap"),
                           content: new Text("TWO is tapped"),
                         );
                         showDialog(context: context, child: alert);
@@ -89,6 +89,14 @@ class TextPage extends StatelessWidget {
                       decorationColor: Colors.redAccent,
                       decorationStyle: TextDecorationStyle.dashed,
                     ),
+                    recognizer: new LongPressGestureRecognizer()
+                      ..onLongPress=(){
+                        var alert = new AlertDialog(
+                          title: new Text("onLongPress"),
+                          content: new Text("TWO is LongPress"),
+                        );
+                        showDialog(context: context, child: alert);
+                      }
                   ),
                   new TextSpan(
                     text: "RICH",

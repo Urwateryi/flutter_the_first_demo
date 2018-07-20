@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'container/ContainerPage.dart';
 import 'text/TextPage.dart';
 import 'button/ButtonPage.dart';
+import 'image/ImagePage.dart';
 
 class ComponentBean {
   String name;
@@ -20,7 +21,7 @@ List<ComponentBean> contentList = <ComponentBean>[
       "Button", new ButtonPage(), "按钮呢", "assets/images/illustration_4.jpg"),
   new ComponentBean(
       "Text", new TextPage(), "文本控件", "assets/images/illustration_9.jpg"),
-  new ComponentBean("Image", null, "图片控件", "assets/images/illustration_11.jpg"),
+  new ComponentBean("Image", new ImagePage(), "图片控件", "assets/images/illustration_11.jpg"),
   new ComponentBean(
       "Scaffold", null, "脚手架", "assets/images/illustration_5.jpg"),
   new ComponentBean(
