@@ -7,8 +7,27 @@ class InputPage extends StatelessWidget {
       appBar: AppBar(
         title: Text("InputPage"),
       ),
-      body: Column(
-        children: <Widget>[],
+      body: Center(
+        child: Column(
+          children: <Widget>[
+            InputChip(
+              label: Text("请输入内容..."),
+            ),
+            SizedBox(height: 10.0),
+            SizedBox(
+              width: 300.0,
+              height: 50.0,
+              child: TextField(
+                decoration: InputDecoration(
+                  filled: true,
+                  hintText: "请输入标题",
+                  fillColor: Colors.white,
+                  hintStyle: TextStyle(color: Colors.grey),
+                ),
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
