@@ -4,6 +4,7 @@ import 'text/TextPage.dart';
 import 'button/ButtonPage.dart';
 import 'image/ImagePage.dart';
 import 'card/CardPage.dart';
+import 'stack/StackPage.dart';
 
 class ComponentBean {
   String name;
@@ -25,7 +26,7 @@ List<ComponentBean> contentList = <ComponentBean>[
   new ComponentBean(
       "Image", new ImagePage(), "图片控件", "assets/images/illustration_11.jpg"),
   new ComponentBean("Card", new CardPage(), "卡片布局", "assets/images/illustration_21.jpg"),
-  new ComponentBean("Stack", null, "层叠布局", "assets/images/illustration_20.jpg"),
+  new ComponentBean("Stack", new StackPage(), "层叠布局", "assets/images/illustration_20.jpg"),
   new ComponentBean(
       "Scaffold", null, "脚手架", "assets/images/illustration_5.jpg"),
   new ComponentBean(
