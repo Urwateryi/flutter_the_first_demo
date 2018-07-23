@@ -69,7 +69,6 @@ class HomeState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-        home: Scaffold(appBar: AppBar(title: Text('首页')), body: _buildList()));
+    return Scaffold(body: _buildList());
   }
 }
