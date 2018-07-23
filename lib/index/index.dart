@@ -5,7 +5,7 @@ import 'package:the_first_one/mine/minepage.dart';
 class Index extends StatefulWidget {
   @override
   State<Index> createState() {
-    return new _IndexState();
+    return _IndexState();
   }
 }
 
@@ -20,20 +20,19 @@ class _IndexState extends State<Index> {
     super.initState();
 
     _navigationViews = <BottomNavigationBarItem>[
-      new BottomNavigationBarItem(
-          title: new Text("首页"), icon: new Icon(Icons.home)),
-      new BottomNavigationBarItem(
-          title: new Text("我的"), icon: new Icon(Icons.perm_identity)),
+      BottomNavigationBarItem(title: Text("首页"), icon: Icon(Icons.home)),
+      BottomNavigationBarItem(
+          title: Text("我的"), icon: Icon(Icons.perm_identity)),
     ];
 
-    _pageList = <StatefulWidget>[new HomePage(), new MinePage()];
+    _pageList = <StatefulWidget>[HomePage(), MinePage()];
 
     _currentPage = _pageList[_currentIndex];
   }
 
   @override
   Widget build(BuildContext context) {
-    final BottomNavigationBar botNavBar = new BottomNavigationBar(
+    final BottomNavigationBar botNavBar = BottomNavigationBar(
         items: _navigationViews,
         currentIndex: _currentIndex,
         fixedColor: Colors.red,
@@ -45,10 +44,9 @@ class _IndexState extends State<Index> {
           });
         });
 
-    return new MaterialApp(
-        home: new Scaffold(
-      body: new Center(child: _currentPage),
+    return Scaffold(
+      body: Center(child: _currentPage),
       bottomNavigationBar: botNavBar,
-    ));
+    );
   }
 }

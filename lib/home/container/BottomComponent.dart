@@ -12,18 +12,18 @@ class BottomComponent extends StatefulWidget {
 
   @override
   State<BottomComponent> createState() {
-    return new BottomComponentState();
+    return BottomComponentState();
   }
 }
 
 class BottomComponentState extends State<BottomComponent> {
   @override
   Widget build(BuildContext context) {
-    return new Column(
+    return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
-        new Icon(widget.icons, color: widget.colors),
-        new Text(widget.btnName, style: new TextStyle(color:  widget.colors))
+        Icon(widget.icons, color: widget.colors),
+        Text(widget.btnName, style: TextStyle(color: widget.colors))
       ],
     );
   }

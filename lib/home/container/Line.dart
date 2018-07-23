@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 class Line extends StatelessWidget {
-
   final MaterialColor color;
   final double width;
   final double height;
@@ -10,12 +9,12 @@ class Line extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return new Container(
+    return Container(
       height: height,
       width: width,
-      decoration: new BoxDecoration(
-          border: new BorderDirectional(
-              start: new BorderSide(color: color, width: width))),
+      decoration: BoxDecoration(
+          border:
+              BorderDirectional(start: BorderSide(color: color, width: width))),
     );
   }
 }

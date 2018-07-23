@@ -4,55 +4,55 @@ import 'package:fluttertoast/fluttertoast.dart';
 class ScaffoldPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return new Scaffold(
-      appBar: new AppBar(
-        title: new Text("StackPage"),
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("StackPage"),
       ),
-      body: new SingleChildScrollView(
-        child: new Column(
+      body: SingleChildScrollView(
+        child: Column(
           children: <Widget>[
-            new Text(
+            Text(
               "one",
-              style: new TextStyle(fontSize: 150.0),
+              style: TextStyle(fontSize: 150.0),
             ),
-            new Text(
+            Text(
               "two",
-              style: new TextStyle(fontSize: 150.0),
+              style: TextStyle(fontSize: 150.0),
             ),
-            new Text(
+            Text(
               "three",
-              style: new TextStyle(fontSize: 150.0),
+              style: TextStyle(fontSize: 150.0),
             ),
-            new Text(
+            Text(
               "four",
-              style: new TextStyle(fontSize: 150.0),
+              style: TextStyle(fontSize: 150.0),
             ),
           ],
         ),
       ),
       persistentFooterButtons: <Widget>[
-        new Material(
-          child: new RaisedButton(
+        Material(
+          child: RaisedButton(
             onPressed: () {
-              new SnackBar(content: new Text('确定!'));
+              SnackBar(content: Text('确定!'));
             },
             color: Colors.red[300],
-            child: new Text(
+            child: Text(
               "确定",
-              style: new TextStyle(color: Colors.white),
+              style: TextStyle(color: Colors.white),
             ),
           ),
           borderRadius: BorderRadius.circular(20.0),
           shadowColor: Colors.grey,
           elevation: 5.0,
         ),
-        new Material(
-          child: new RaisedButton(
+        Material(
+          child: RaisedButton(
             onPressed: () {},
             color: Colors.blue[300],
-            child: new Text(
+            child: Text(
               "取消",
-              style: new TextStyle(color: Colors.white),
+              style: TextStyle(color: Colors.white),
             ),
           ),
           borderRadius: BorderRadius.circular(20.0),
@@ -60,60 +60,60 @@ class ScaffoldPage extends StatelessWidget {
           elevation: 5.0,
         ),
       ],
-      bottomNavigationBar: new BottomAppBar(
-        child: new Container(
+      bottomNavigationBar: BottomAppBar(
+        child: Container(
           height: 50.0,
-          child: new Row(
+          child: Row(
             children: <Widget>[
-              new Container(
-                child: new FlatButton(
+              Container(
+                child: FlatButton(
                   onPressed: () {},
-                  child: new Text("赞同10 K"),
+                  child: Text("赞同10 K"),
                   color: Colors.white,
                 ),
-                margin: new EdgeInsets.only(left: 16.0),
+                margin: EdgeInsets.only(left: 16.0),
                 height: 30.0,
               ),
-              new Container(
-                child: new IconButton(
-                  icon: new Icon(Icons.arrow_drop_down),
+              Container(
+                child: IconButton(
+                  icon: Icon(Icons.arrow_drop_down),
                   onPressed: () {},
                   padding: const EdgeInsets.all(0.0),
                 ),
-                margin: new EdgeInsets.only(left: 8.0),
+                margin: EdgeInsets.only(left: 8.0),
                 height: 30.0,
-                decoration: new BoxDecoration(
+                decoration: BoxDecoration(
                   borderRadius: const BorderRadius.all(
                     const Radius.circular(2.0),
                   ),
                   color: Colors.white,
                 ),
               ),
-              new Expanded(
-                child: new Row(
+              Expanded(
+                child: Row(
                   children: <Widget>[
-                    new Material(
-                      child: new RaisedButton(
+                    Material(
+                      child: RaisedButton(
                         onPressed: () {
-                          new SnackBar(content: new Text('确定!'));
+                          SnackBar(content: Text('确定!'));
                         },
                         color: Colors.red[300],
-                        child: new Text(
+                        child: Text(
                           "确定",
-                          style: new TextStyle(color: Colors.white),
+                          style: TextStyle(color: Colors.white),
                         ),
                       ),
                       borderRadius: BorderRadius.circular(20.0),
                       shadowColor: Colors.grey,
                       elevation: 5.0,
                     ),
-                    new Material(
-                      child: new RaisedButton(
+                    Material(
+                      child: RaisedButton(
                         onPressed: () {},
                         color: Colors.blue[300],
-                        child: new Text(
+                        child: Text(
                           "取消",
-                          style: new TextStyle(color: Colors.white),
+                          style: TextStyle(color: Colors.white),
                         ),
                       ),
                       borderRadius: BorderRadius.circular(20.0),

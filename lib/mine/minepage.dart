@@ -1,22 +1,19 @@
 import 'package:flutter/material.dart';
 
-class MinePage extends StatefulWidget{
+class MinePage extends StatefulWidget {
   @override
   State<MinePage> createState() {
-    return new MineState();
+    return MineState();
   }
 }
 
-class MineState extends State<MinePage>{
+class MineState extends State<MinePage> {
   @override
   Widget build(BuildContext context) {
-    return new MaterialApp(
-        home: new Scaffold(
-          appBar: new AppBar(title: new Text('我的')),
-          body: new Center(
-              child: new Text("MINE 啦")
-          ),
-        )
-    );
+    return MaterialApp(
+        home: Scaffold(
+      appBar: AppBar(title: Text('我的')),
+      body: Center(child: Text("MINE 啦")),
+    ));
   }
 }
