@@ -7,6 +7,7 @@ import 'card/CardPage.dart';
 import 'stack/StackPage.dart';
 import 'scaffold/ScaffoldPage.dart';
 import 'appbar/AppBarPage.dart';
+import 'Input/InputPage.dart';
 
 class ComponentBean {
   String name;
@@ -33,11 +34,11 @@ List<ComponentBean> contentList = <ComponentBean>[
       "Scaffold",  ScaffoldPage(), "脚手架", "assets/images/illustration_5.jpg"),
    ComponentBean(
       "Appbar",  AppBarPage(), "就是AppBar嘛", "assets/images/illustration_8.jpg"),
+   ComponentBean("Input", new InputPage(), "输入框", "assets/images/illustration_13.jpg"),
    ComponentBean(
       "FlutterLogo", null, "不晓得是啥", "assets/images/illustration_6.jpg"),
    ComponentBean(
       "Placeholder", null, "占位符？？？？", "assets/images/illustration_7.jpg"),
-   ComponentBean("Input", null, "输入框", "assets/images/illustration_13.jpg"),
    ComponentBean(
       "CheckBox", null, "单选框", "assets/images/illustration_14.jpg"),
    ComponentBean(
@@ -49,8 +50,6 @@ List<ComponentBean> contentList = <ComponentBean>[
       "assets/images/illustration_18.jpg"),
    ComponentBean("多个Item的ListView", null, "一个列表有多个item的样式",
       "assets/images/illustration_19.jpg"),
-   ComponentBean(
-      "ThemeData", null, "ThemeData", "assets/images/illustration_27.jpg"),
    ComponentBean("FlexibleSpaceBar", null, "FlexibleSpaceBar",
       "assets/images/illustration_27.jpg"),
    ComponentBean("Cupertino风格控件", null, "Cupertino风格控件",

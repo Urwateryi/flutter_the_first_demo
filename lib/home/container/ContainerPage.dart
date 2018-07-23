@@ -142,7 +142,7 @@ class ContainerPage extends StatelessWidget {
                         onPressed: () {
                           Fluttertoast.showToast(msg: "赞赏支持");
                         },
-                        color: Colors.red[300],
+                        color: Colors.orange[400],
                         child:
                             Text("赞赏支持", style: TextStyle(color: Colors.white)),
                       ))
@@ -202,7 +202,7 @@ class ContainerPage extends StatelessWidget {
                           Fluttertoast.showToast(msg: "关注一下");
                         },
                         textColor: Colors.white,
-                        color: Colors.green[400],
+                        color: Colors.cyan[200],
                         child: Text('+ 关注'),
                       )
                     ],

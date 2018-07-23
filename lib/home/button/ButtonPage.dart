@@ -17,7 +17,7 @@ class ButtonPage extends StatelessWidget {
               Material(
                 child: RaisedButton(
                   onPressed: () {},
-                  color: Colors.red[300],
+                  color: Colors.orange[400],
                   child: Text(
                     "RaisedButton",
                     style: TextStyle(color: Colors.white),
@@ -30,7 +30,7 @@ class ButtonPage extends StatelessWidget {
               const SizedBox(height: 10.0),
               FlatButton(
                 onPressed: () {},
-                color: Colors.red[300],
+                color: Colors.orange[400],
                 child: Text(
                   "FlatButton",
                   style: TextStyle(color: Colors.white),
@@ -39,14 +39,14 @@ class ButtonPage extends StatelessWidget {
               const SizedBox(height: 10.0),
               RaisedButton.icon(
                 onPressed: () {},
-                color: Colors.red[300],
+                color: Colors.orange[400],
                 icon: const Icon(Icons.favorite_border, size: 18.0),
                 label: const Text('RaisedButton.icon'),
               ),
               const SizedBox(height: 10.0),
               FlatButton.icon(
                 onPressed: () {},
-                color: Colors.red[300],
+                color: Colors.orange[400],
                 icon: const Icon(Icons.comment, size: 18.0),
                 label: const Text('FlatButton.icon'),
               ),
@@ -61,7 +61,7 @@ class ButtonPage extends StatelessWidget {
               FloatingActionButton.extended(
                   onPressed: () {},
                   foregroundColor: Colors.white,
-                  backgroundColor: Colors.red[300],
+                  backgroundColor: Colors.orange[400],
                   label: Text('FloatingActionButton.extended', maxLines: 1),
                   icon: CircleAvatar(
                       radius: 15.0,
@@ -69,7 +69,7 @@ class ButtonPage extends StatelessWidget {
                           AssetImage('assets/images/illustration_8.jpg'))),
               const SizedBox(height: 10.0),
               IconButton(
-                  color: Colors.red[300],
+                  color: Colors.orange[400],
                   highlightColor: Colors.white,
                   icon: const Icon(Icons.share, size: 18.0),
                   onPressed: () {}),
@@ -93,7 +93,7 @@ class ButtonPage extends StatelessWidget {
               Material(
                 child: MaterialButton(
                   onPressed: () {},
-                  color: Colors.red[300],
+                  color: Colors.orange[400],
                   child: Text(
                     "MaterialButton",
                     style: TextStyle(color: Colors.white),
@@ -106,7 +106,7 @@ class ButtonPage extends StatelessWidget {
               const SizedBox(height: 10.0),
               RawMaterialButton(
                 onPressed: () {},
-                fillColor: Colors.red[300],
+                fillColor: Colors.orange[400],
                 child: Text(
                   "RawMaterialButton",
                   style: TextStyle(color: Colors.white),
@@ -114,7 +114,7 @@ class ButtonPage extends StatelessWidget {
               ),
               const SizedBox(height: 10.0),
               CupertinoButton(
-                color: Colors.red[300],
+                color: Colors.orange[400],
                 pressedOpacity: 0.7,
                 borderRadius: BorderRadius.all(Radius.circular(25.0)),
                 child: Text("CupertinoButton"),

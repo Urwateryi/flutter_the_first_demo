@@ -20,7 +20,7 @@ class CardPage extends StatelessWidget {
                     subtitle: Text("成都市，621000"),
                     leading: Icon(
                       Icons.business,
-                      color: Colors.red[300],
+                      color: Colors.orange[400],
                     ),
                   ),
                   Divider(),
@@ -28,14 +28,14 @@ class CardPage extends StatelessWidget {
                     title: Text("周小姐"),
                     leading: Icon(
                       Icons.contact_phone,
-                      color: Colors.red[300],
+                      color: Colors.orange[400],
                     ),
                   ),
                   ListTile(
                     title: Text("beautygirl@gmail.com"),
                     leading: Icon(
                       Icons.contact_mail,
-                      color: Colors.red[300],
+                      color: Colors.orange[400],
                     ),
                   ),
                 ],
@@ -59,7 +59,7 @@ class CardPage extends StatelessWidget {
                         width: 120.0,
                         child: Material(
                           child: RaisedButton(
-                            color: Colors.red[300],
+                            color: Colors.orange[400],
                             onPressed: () {
                               Fluttertoast.showToast(msg: "DON'T");
                             },
@@ -77,7 +77,7 @@ class CardPage extends StatelessWidget {
                         width: 120.0,
                         child: Material(
                           child: RaisedButton(
-                            color: Colors.blue[300],
+                            color: Colors.cyan[200],
                             onPressed: () {
                               Fluttertoast.showToast(msg: "I'M IN");
                             },

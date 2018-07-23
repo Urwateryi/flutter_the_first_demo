@@ -36,7 +36,7 @@ class ScaffoldPage extends StatelessWidget {
             onPressed: () {
               SnackBar(content: Text('确定!'));
             },
-            color: Colors.red[300],
+            color: Colors.orange[400],
             child: Text(
               "确定",
               style: TextStyle(color: Colors.white),
@@ -49,7 +49,7 @@ class ScaffoldPage extends StatelessWidget {
         Material(
           child: RaisedButton(
             onPressed: () {},
-            color: Colors.blue[300],
+            color: Colors.cyan[200],
             child: Text(
               "取消",
               style: TextStyle(color: Colors.white),
@@ -97,7 +97,7 @@ class ScaffoldPage extends StatelessWidget {
                         onPressed: () {
                           SnackBar(content: Text('确定!'));
                         },
-                        color: Colors.red[300],
+                        color: Colors.orange[400],
                         child: Text(
                           "确定",
                           style: TextStyle(color: Colors.white),
@@ -110,7 +110,7 @@ class ScaffoldPage extends StatelessWidget {
                     Material(
                       child: RaisedButton(
                         onPressed: () {},
-                        color: Colors.blue[300],
+                        color: Colors.cyan[200],
                         child: Text(
                           "取消",
                           style: TextStyle(color: Colors.white),

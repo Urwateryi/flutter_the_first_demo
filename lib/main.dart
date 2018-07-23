@@ -6,14 +6,16 @@ import 'package:the_first_one/mine/minepage.dart';
 void main() => runApp(Main());
 
 final ThemeData kIOSTheme = ThemeData(
+  primaryIconTheme: const IconThemeData(color: Colors.white),
   primarySwatch: Colors.green,
   primaryColor: Colors.green,
   primaryColorBrightness: Brightness.light,
 );
 
 final ThemeData kDefaultTheme = ThemeData(
-  primarySwatch: Colors.red,
-  primaryColor: Colors.red,
+  primaryIconTheme: const IconThemeData(color: Colors.white),
+  primarySwatch: Colors.blueGrey,
+  primaryColor: Colors.blueGrey,
   accentColor: Colors.orangeAccent,
 );
 
@@ -53,7 +55,6 @@ class MainState extends State<Main> {
     final BottomNavigationBar botNavBar = BottomNavigationBar(
         items: _navigationViews,
         currentIndex: _currentIndex,
-        fixedColor: Colors.red,
         type: BottomNavigationBarType.fixed,
         onTap: (int index) {
           setState(() {
