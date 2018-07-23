@@ -218,30 +218,57 @@ class ContainerPage extends StatelessWidget {
           )
         ],
       ),
-      bottomNavigationBar: new Container(
-        width: 500.0,
-        height: 60.0,
-        color: Colors.white,
-        child: new Row(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: <Widget>[
-            new BottomComponent(
-              icons: Icons.monetization_on,
-              btnName: '赞赏',
-            ),
-            new BottomComponent(
-              icons: Icons.comment,
-              btnName: '评论',
-            ),
-            new BottomComponent(
-              icons: Icons.favorite_border,
-              btnName: '喜欢',
-            ),
-            new BottomComponent(
-              icons: Icons.share,
-              btnName: '分享',
-            ),
-          ],
+//      bottomNavigationBar: new Container(
+//        width: 500.0,
+//        height: 60.0,
+//        color: Colors.white,
+//        child: new Row(
+//          mainAxisAlignment: MainAxisAlignment.spaceAround,
+//          children: <Widget>[
+//            new BottomComponent(
+//              icons: Icons.monetization_on,
+//              btnName: '赞赏',
+//            ),
+//            new BottomComponent(
+//              icons: Icons.comment,
+//              btnName: '评论',
+//            ),
+//            new BottomComponent(
+//              icons: Icons.favorite_border,
+//              btnName: '喜欢',
+//            ),
+//            new BottomComponent(
+//              icons: Icons.share,
+//              btnName: '分享',
+//            ),
+//          ],
+//        ),
+//      ),
+
+      bottomNavigationBar: new BottomAppBar(
+        child: new Container(
+          height: 60.0,
+          child: new Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: <Widget>[
+              new BottomComponent(
+                icons: Icons.monetization_on,
+                btnName: '赞赏',
+              ),
+              new BottomComponent(
+                icons: Icons.comment,
+                btnName: '评论',
+              ),
+              new BottomComponent(
+                icons: Icons.favorite_border,
+                btnName: '喜欢',
+              ),
+              new BottomComponent(
+                icons: Icons.share,
+                btnName: '分享',
+              ),
+            ],
+          ),
         ),
       ),
     );

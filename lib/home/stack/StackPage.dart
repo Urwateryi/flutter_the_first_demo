@@ -6,13 +6,14 @@ class StackPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: new AppBar(
-        title: new Text("CardPage"),
+        title: new Text("StackPage"),
       ),
       body: new Center(
         child: new Column(
           children: <Widget>[
+            new SizedBox(height: 20.0),
             new Stack(
-              alignment: Alignment.topRight,
+              alignment: const FractionalOffset(0.9, 0.1),
               children: <Widget>[
                 new Image(
                   image: new AssetImage("assets/images/illustration_11.jpg"),
@@ -37,6 +38,25 @@ class StackPage extends StatelessWidget {
                 ),
               ],
             ),
+            new SizedBox(height: 20.0),
+            new Stack(
+              children: <Widget>[
+                new Image(
+                  image: new AssetImage("assets/images/illustration_11.jpg"),
+                  width: 300.0,
+                  height: 200.0,
+                  fit: BoxFit.cover,
+                ),
+                new Positioned(//定位
+                  right: 15.0,
+                  top: 15.0,
+                  child: new Icon(
+                    Icons.share,
+                    color: Colors.white,
+                  ),
+                ),
+              ],
+            )
           ],
         ),
       ),

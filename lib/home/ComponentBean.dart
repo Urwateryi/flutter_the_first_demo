@@ -5,6 +5,7 @@ import 'button/ButtonPage.dart';
 import 'image/ImagePage.dart';
 import 'card/CardPage.dart';
 import 'stack/StackPage.dart';
+import 'scaffold/ScaffoldPage.dart';
 
 class ComponentBean {
   String name;
@@ -28,13 +29,13 @@ List<ComponentBean> contentList = <ComponentBean>[
   new ComponentBean("Card", new CardPage(), "卡片布局", "assets/images/illustration_21.jpg"),
   new ComponentBean("Stack", new StackPage(), "层叠布局", "assets/images/illustration_20.jpg"),
   new ComponentBean(
-      "Scaffold", null, "脚手架", "assets/images/illustration_5.jpg"),
+      "Scaffold", new ScaffoldPage(), "脚手架", "assets/images/illustration_5.jpg"),
+  new ComponentBean(
+      "Appbar", null, "就是AppBar嘛", "assets/images/illustration_8.jpg"),
   new ComponentBean(
       "FlutterLogo", null, "不晓得是啥", "assets/images/illustration_6.jpg"),
   new ComponentBean(
       "Placeholder", null, "占位符？？？？", "assets/images/illustration_7.jpg"),
-  new ComponentBean(
-      "Appbar", null, "就是AppBar嘛", "assets/images/illustration_8.jpg"),
   new ComponentBean("Input", null, "输入框", "assets/images/illustration_13.jpg"),
   new ComponentBean(
       "CheckBox", null, "单选框", "assets/images/illustration_14.jpg"),
