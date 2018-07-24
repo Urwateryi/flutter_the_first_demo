@@ -10,6 +10,7 @@ import 'appbar/AppBarPage.dart';
 import 'Input/InputPage.dart';
 import 'form/FormPage.dart';
 import 'decoration/DecorationPage.dart';
+import 'flutterlogo/FlutterLogoPage.dart';
 
 class ComponentBean {
   String name;
@@ -41,7 +42,7 @@ List<ComponentBean> contentList = <ComponentBean>[
    ComponentBean(
        "Decoration", new DecorationPage(), "Decoration", "assets/images/illustration_27.jpg"),
    ComponentBean(
-      "FlutterLogo", null, "不晓得是啥", "assets/images/illustration_6.jpg"),
+      "FlutterLogo", new FlutterLogoPage(), "不晓得是啥", "assets/images/illustration_6.jpg"),
    ComponentBean(
       "Placeholder", null, "占位符？？？？", "assets/images/illustration_7.jpg"),
    ComponentBean(
