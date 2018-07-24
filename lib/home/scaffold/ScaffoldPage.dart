@@ -76,6 +76,7 @@ class ScaffoldPage extends StatelessWidget {
               ),
               Container(
                 child: IconButton(
+                  tooltip: "点赞",//当长按该控件的时候，会提示tooltip中的内容
                   icon: Icon(Icons.arrow_drop_down),
                   onPressed: () {},
                   padding: const EdgeInsets.all(0.0),

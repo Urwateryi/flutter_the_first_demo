@@ -5,8 +5,20 @@ class InputFieldArea extends StatelessWidget {
   final bool obscure;
   final IconData icon;
   final String labelText;
+  final String errorText;
 
-  InputFieldArea({this.hint, this.obscure, this.icon, this.labelText});
+  final ValueChanged<String> onChanged;
+  final ValueChanged<String> onSubmitted;
+
+  InputFieldArea({
+    this.hint,
+    this.obscure,
+    this.icon,
+    this.labelText,
+    this.onChanged,
+    this.onSubmitted,
+    this.errorText,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -19,11 +31,13 @@ class InputFieldArea extends StatelessWidget {
           ),
         ),
       ),
-      child: TextFormField(
+      child: TextField(
         obscureText: obscure,
         style: TextStyle(
           color: Colors.white,
         ),
+        onChanged: onChanged,
+        onSubmitted: onSubmitted,
         decoration: InputDecoration(
           icon: Icon(
             icon,
@@ -32,6 +46,7 @@ class InputFieldArea extends StatelessWidget {
           border: InputBorder.none,
           hintText: hint,
           labelText: labelText,
+          errorText: errorText,
           labelStyle: TextStyle(color: Colors.white),
           hintStyle: TextStyle(color: Colors.white30, fontSize: 15.0),
           contentPadding:

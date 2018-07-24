@@ -1,7 +1,25 @@
 import 'package:flutter/material.dart';
 import 'package:the_first_one/components/InputFields.dart';
+import 'package:the_first_one/utils/JudgeUtil.dart';
 
-class InputPage extends StatelessWidget {
+class InputPage extends StatefulWidget {
+  @override
+  State<InputPage> createState() {
+    return InputPageState();
+  }
+}
+
+class InputPageState extends State<InputPage> {
+  String _errorText;
+
+  void _onChanged(String str) {
+    print("Onchanged called");
+  }
+
+  void _onSubmitted(String str) {
+    print("Onsubmitted called");
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -34,10 +52,10 @@ class InputPage extends StatelessWidget {
 //                    border: InputBorder.none,
                   ),
                   onChanged: (String content) {
-                    print("onChanged>>" + content);
+                    _onChanged(content);
                   },
                   onSubmitted: (String content) {
-                    print("onSubmitted>>" + content);
+                    _onSubmitted(content);
                   },
                   controller: TextEditingController(),
                 ),
@@ -53,13 +71,17 @@ class InputPage extends StatelessWidget {
                         color: Colors.grey, style: BorderStyle.solid),
                   ),
                   child: TextField(
-                    autofocus: true, //自动获取焦点
+                    autofocus: true,
+                    //自动获取焦点
                     controller: TextEditingController(),
                     decoration: InputDecoration(
                         contentPadding: EdgeInsets.all(15.0),
                         border: InputBorder.none),
                     onChanged: (String content) {
-                      print(content); //文本内容变化,会回调给我们
+                      print("onChanged>>>" + content); //文本内容变化,会回调给我们
+                    },
+                    onSubmitted: (String content) {
+                      print("onSubmitted>>>" + content);
                     },
                   ),
                 ),
@@ -70,23 +92,45 @@ class InputPage extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: <Widget>[
                     new Form(
-                        child: new Column(
-                      mainAxisAlignment: MainAxisAlignment.spaceAround,
-                      children: <Widget>[
-                        new InputFieldArea(
-                          hint: "6个字符",
-                          obscure: false,
-                          labelText: "姓名",
-                          icon: Icons.person_outline,
-                        ),
-                        new InputFieldArea(
-                          hint: "6-12位有效字符",
-                          obscure: true, //是否隐藏
-                          labelText: "密码",
-                          icon: Icons.lock_outline,
-                        ),
-                      ],
-                    )),
+                      child: new Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: <Widget>[
+                          new InputFieldArea(
+                            hint: "请输入正确的邮箱地址",
+                            obscure: false,
+                            labelText: "邮箱",
+                            icon: Icons.person_outline,
+                            onSubmitted: (content) {
+                              setState(() {
+                                if (!JudgeUtil.isEmail(content)) {
+                                  _errorText = 'Error: This is not an email';
+                                } else {
+                                  _errorText = null;
+                                }
+                                print(_errorText);
+                              });
+                            },
+                            errorText: _errorText,
+                            onChanged: (content) {
+                              print("onChanged>InputFieldArea>邮箱>" + content);
+                            },
+                          ),
+                          new InputFieldArea(
+                            hint: "6-12位有效字符",
+                            obscure: true,
+                            //是否隐藏
+                            labelText: "密码",
+                            icon: Icons.lock_outline,
+                            onSubmitted: (content) {
+                              print("onSubmitted>InputFieldArea>密码>" + content);
+                            },
+                            onChanged: (content) {
+                              print("onChanged>InputFieldArea>密码>" + content);
+                            },
+                          ),
+                        ],
+                      ),
+                    ),
                   ],
                 ),
               ),
