@@ -11,6 +11,7 @@ import 'Input/InputPage.dart';
 import 'form/FormPage.dart';
 import 'decoration/DecorationPage.dart';
 import 'flutterlogo/FlutterLogoPage.dart';
+import 'placeholder/PlaceHolderPage.dart';
 
 class ComponentBean {
   String name;
@@ -44,7 +45,7 @@ List<ComponentBean> contentList = <ComponentBean>[
    ComponentBean(
       "FlutterLogo", new FlutterLogoPage(), "不晓得是啥", "assets/images/illustration_6.jpg"),
    ComponentBean(
-      "Placeholder", null, "占位符？？？？", "assets/images/illustration_7.jpg"),
+      "Placeholder", new PlaceHolderPage(), "占位符？？？？", "assets/images/illustration_7.jpg"),
    ComponentBean(
       "CheckBox", null, "单选框", "assets/images/illustration_14.jpg"),
    ComponentBean(
