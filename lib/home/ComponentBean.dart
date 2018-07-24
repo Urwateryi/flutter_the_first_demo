@@ -9,6 +9,7 @@ import 'scaffold/ScaffoldPage.dart';
 import 'appbar/AppBarPage.dart';
 import 'Input/InputPage.dart';
 import 'form/FormPage.dart';
+import 'decoration/DecorationPage.dart';
 
 class ComponentBean {
   String name;
@@ -38,6 +39,8 @@ List<ComponentBean> contentList = <ComponentBean>[
    ComponentBean("Input", new InputPage(), "输入框", "assets/images/illustration_13.jpg"),
    ComponentBean("Form", new FormPage(), "输入框", "assets/images/illustration_13.jpg"),
    ComponentBean(
+       "Decoration", new DecorationPage(), "Decoration", "assets/images/illustration_27.jpg"),
+   ComponentBean(
       "FlutterLogo", null, "不晓得是啥", "assets/images/illustration_6.jpg"),
    ComponentBean(
       "Placeholder", null, "占位符？？？？", "assets/images/illustration_7.jpg"),
@@ -56,8 +59,7 @@ List<ComponentBean> contentList = <ComponentBean>[
       "assets/images/illustration_27.jpg"),
    ComponentBean("Cupertino风格控件", null, "Cupertino风格控件",
       "assets/images/illustration_27.jpg"),
-   ComponentBean(
-      "Decoration", null, "Decoration", "assets/images/illustration_27.jpg"),
+
    ComponentBean("手势GestureDetector", null, "Dismissed等",
       "assets/images/illustration_27.jpg"),
    ComponentBean(
