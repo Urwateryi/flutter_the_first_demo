@@ -8,6 +8,7 @@ import 'stack/StackPage.dart';
 import 'scaffold/ScaffoldPage.dart';
 import 'appbar/AppBarPage.dart';
 import 'Input/InputPage.dart';
+import 'form/FormPage.dart';
 
 class ComponentBean {
   String name;
@@ -35,6 +36,7 @@ List<ComponentBean> contentList = <ComponentBean>[
    ComponentBean(
       "Appbar",  AppBarPage(), "就是AppBar嘛", "assets/images/illustration_8.jpg"),
    ComponentBean("Input", new InputPage(), "输入框", "assets/images/illustration_13.jpg"),
+   ComponentBean("Form", new FormPage(), "输入框", "assets/images/illustration_13.jpg"),
    ComponentBean(
       "FlutterLogo", null, "不晓得是啥", "assets/images/illustration_6.jpg"),
    ComponentBean(
