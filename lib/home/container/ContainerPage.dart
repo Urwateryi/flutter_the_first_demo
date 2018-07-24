@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'BottomComponent.dart';
+import 'package:the_first_one/components/BottomComponent.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'Line.dart';
+import 'package:the_first_one/components/Line.dart';
 
 class ContainerPage extends StatelessWidget {
   @override
