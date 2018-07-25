@@ -1,0 +1,15 @@
+import 'package:flutter/material.dart';
+
+class CustomPage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("CustomPage"),
+      ),
+//      body: GridView.builder(
+//        padding: EdgeInsets.all(4.0),
+//      ),
+    );
+  }
+}

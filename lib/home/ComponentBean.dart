@@ -12,7 +12,7 @@ import 'form/FormPage.dart';
 import 'decoration/DecorationPage.dart';
 import 'flutterlogo/FlutterLogoPage.dart';
 import 'placeholder/PlaceHolderPage.dart';
-import 'gridview/GridViewPage.dart';
+import 'package:the_first_one/home/gridview/GridViewList.dart';
 
 class ComponentBean {
   String name;
@@ -40,7 +40,7 @@ List<ComponentBean> contentList = <ComponentBean>[
       "Scaffold", ScaffoldPage(), "脚手架", "assets/images/illustration_7.jpg"),
   ComponentBean(
       "Appbar", AppBarPage(), "就是AppBar嘛", "assets/images/illustration_8.jpg"),
-  ComponentBean("GridView", new GridViewPage(), "网格布局",
+  ComponentBean("GridView", new GridViewList(), "网格布局",
       "assets/images/illustration_8.jpg"),
   ComponentBean("Flow", null, "Flow", "assets/images/illustration_10.jpg"),
   ComponentBean("Table", null, "Table", "assets/images/illustration_11.jpg"),

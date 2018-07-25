@@ -61,6 +61,22 @@ class ImagePage extends StatelessWidget {
                 fadeInDuration: const Duration(milliseconds: 1200),
                 fadeOutDuration: const Duration(milliseconds: 1200),
               ),
+              const SizedBox(height: 20.0),
+              Container(
+                width: 200.0,
+                height: 200.0,
+                decoration: BoxDecoration(
+                  image: DecorationImage(
+                    image: AssetImage(
+                      'assets/images/illustration_28.jpg',
+                    ),
+                    //从Assets加载图片
+                    fit: BoxFit.cover,
+                  ),
+                  shape: BoxShape.circle,
+                ),
+              ),
+              const SizedBox(height: 20.0),
             ],
           ),
         ),
