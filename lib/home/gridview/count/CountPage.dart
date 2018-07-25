@@ -1,17 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 
 class CountPage extends StatelessWidget {
 
   List<Container> _buildGridTileList(int count) {
     return  List<Container>.generate(
-    count,
-    (index) => Container(
-    child:  Image.asset(
-    'assets/images/illustration_${index + 1}.jpg',
-    fit: BoxFit.cover,
-    ),
-    ),
-    );
+      count,
+      (index) => Container(
+            child: GestureDetector(child:  Image.asset('assets/images/illustration_${index + 1}.jpg',fit: BoxFit.cover,),
+                                onTap: (){
+                                    Fluttertoast.showToast(msg: "第$index个");
+                },)
+            ),
+      );
     }
 
   @override

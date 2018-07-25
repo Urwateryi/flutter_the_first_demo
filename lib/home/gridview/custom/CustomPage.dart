@@ -7,9 +7,7 @@ class CustomPage extends StatelessWidget {
       appBar: AppBar(
         title: Text("CustomPage"),
       ),
-//      body: GridView.builder(
-//        padding: EdgeInsets.all(4.0),
-//      ),
+      body: Text("CustomPage"),
     );
   }
 }
