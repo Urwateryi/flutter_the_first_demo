@@ -14,6 +14,7 @@ import 'flutterlogo/FlutterLogoPage.dart';
 import 'placeholder/PlaceHolderPage.dart';
 import 'package:the_first_one/home/gridview/GridViewList.dart';
 import 'buttomsheet/BottomSheetPage.dart';
+import 'key/KeyPage.dart';
 
 class ComponentBean {
   String name;
@@ -45,6 +46,7 @@ List<ComponentBean> contentList = <ComponentBean>[
       "assets/images/illustration_8.jpg"),
   ComponentBean("ButtomSheet", new BottomSheetPage(), "BottomSheet是一个从屏幕底部滑起的列表（以显示更多的内容）。你可以调用showBottomSheet()或showModalBottomSheet弹出",
       "assets/images/illustration_18.jpg"),
+  ComponentBean("GlobalKey", new KeyPage(), "GlobalKeyPage", "assets/images/illustration_10.jpg"),
   ComponentBean("Flow", null, "Flow", "assets/images/illustration_10.jpg"),
   ComponentBean("Table", null, "Table", "assets/images/illustration_11.jpg"),
   ComponentBean("Wrap", null, "Wrap", "assets/images/illustration_12.jpg"),
