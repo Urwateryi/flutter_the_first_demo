@@ -21,7 +21,7 @@ class CountPage extends StatelessWidget {
       appBar: AppBar(
         title: Text("CountPage"),
       ),
-      body: GridView.count(
+      body: GridView.count(//GridView.count是最常用的
         crossAxisCount: 4,
         padding: EdgeInsets.all(4.0),
         mainAxisSpacing: 4.0,
