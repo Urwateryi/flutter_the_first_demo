@@ -15,6 +15,7 @@ import 'placeholder/PlaceHolderPage.dart';
 import 'package:the_first_one/home/gridview/GridViewList.dart';
 import 'buttomsheet/BottomSheetPage.dart';
 import 'key/KeyPage.dart';
+import 'listview/ListViewPage.dart';
 
 class ComponentBean {
   String name;
@@ -44,16 +45,20 @@ List<ComponentBean> contentList = <ComponentBean>[
       "Appbar", AppBarPage(), "就是AppBar嘛", "assets/images/illustration_8.jpg"),
   ComponentBean("GridView", new GridViewList(), "网格布局",
       "assets/images/illustration_8.jpg"),
-  ComponentBean("ButtomSheet", new BottomSheetPage(), "BottomSheet是一个从屏幕底部滑起的列表（以显示更多的内容）。你可以调用showBottomSheet()或showModalBottomSheet弹出",
+  ComponentBean(
+      "ButtomSheet",
+      new BottomSheetPage(),
+      "BottomSheet是一个从屏幕底部滑起的列表（以显示更多的内容）。你可以调用showBottomSheet()或showModalBottomSheet弹出",
       "assets/images/illustration_18.jpg"),
-  ComponentBean("GlobalKey", new KeyPage(), "GlobalKeyPage", "assets/images/illustration_10.jpg"),
+  ComponentBean("GlobalKey", new KeyPage(), "GlobalKeyPage",
+      "assets/images/illustration_10.jpg"),
   ComponentBean("Flow", null, "Flow", "assets/images/illustration_10.jpg"),
   ComponentBean("Table", null, "Table", "assets/images/illustration_11.jpg"),
   ComponentBean("Wrap", null, "Wrap", "assets/images/illustration_12.jpg"),
   ComponentBean(
       "ListBody", null, "ListBodyBar", "assets/images/illustration_13.jpg"),
-  ComponentBean(
-      "ListView", null, "ListView", "assets/images/illustration_14.jpg"),
+  ComponentBean("ListView", new ListViewList(), "ListView",
+      "assets/images/illustration_14.jpg"),
   ComponentBean("CustomMultiChildLayout", null, "CustomMultiChildLayout",
       "assets/images/illustration_15.jpg"),
   ComponentBean(

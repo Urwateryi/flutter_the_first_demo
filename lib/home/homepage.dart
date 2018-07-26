@@ -57,6 +57,7 @@ class HomeState extends State<HomePage> {
     return Container(
         color: Colors.white,
         child: ListView.builder(
+            scrollDirection: Axis.vertical,
             padding: const EdgeInsets.all(16.0),
             itemCount: contentList.length * 2,
             itemBuilder: (context, position) {

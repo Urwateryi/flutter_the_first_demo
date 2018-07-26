@@ -1,36 +1,34 @@
 import 'package:flutter/material.dart';
 import 'package:the_first_one/utils/PageUtil.dart';
-import 'extent/ExtentPage.dart';
-import 'custom/CustomPage.dart';
-import 'builder/BuilderPage.dart';
-import 'normal/GridViewPage.dart';
-import 'count/CountPage.dart';
+import 'multiitem/MultiItemPage.dart';
+import 'radiotile/RadioTilePage.dart';
+import 'sliver/SliverListPage.dart';
+import 'multilevel/MultiLevelPage.dart';
 
-class GridViewList extends StatefulWidget {
+class ListViewList extends StatefulWidget {
   @override
-  State<GridViewList> createState() {
-    return GridViewState();
+  State<ListViewList> createState() {
+    return ListViewState();
   }
 }
 
-class GridViewBean {
+class ListViewBean {
   String name;
   Widget targetWidget;
 
-  GridViewBean(this.name, this.targetWidget);
+  ListViewBean(this.name, this.targetWidget);
 }
 
-class GridViewState extends State<GridViewList> {
-  List<GridViewBean> contentList = <GridViewBean>[
-    GridViewBean("extent", ExtentPage()),
-    GridViewBean("count", CountPage()),
-    GridViewBean("custom", CustomPage()),
-    GridViewBean("builder", BuilderPage()),
-    GridViewBean("gridview", GridViewPage())
+class ListViewState extends State<ListViewList> {
+  List<ListViewBean> contentList = <ListViewBean>[
+    ListViewBean("ListView的RadioListTile的切换", RadioTilePage()),
+    ListViewBean("可折叠的AppBar+ListView", SliverListPage()),
+    ListViewBean("多条目的ListView的demo", MultiItemPage()),
+    ListViewBean("多级列表Demo", MultiLevelPage()),
   ];
 
   Widget _buildRow(int index) {
-    GridViewBean bean = contentList[index];
+    ListViewBean bean = contentList[index];
 
     return GestureDetector(
       child: Container(
@@ -48,7 +46,6 @@ class GridViewState extends State<GridViewList> {
     return Container(
       color: Colors.white,
       child: ListView.builder(
-        scrollDirection: Axis.horizontal,//水平ListView
         padding: const EdgeInsets.all(16.0),
         itemCount: contentList.length * 2,
         itemBuilder: (context, position) {
@@ -64,7 +61,7 @@ class GridViewState extends State<GridViewList> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text("GridViewList"),
+          title: Text("ListViewList"),
         ),
         body: _buildList());
   }
