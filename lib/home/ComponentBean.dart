@@ -17,6 +17,7 @@ import 'buttomsheet/BottomSheetPage.dart';
 import 'key/KeyPage.dart';
 import 'listview/ListViewPage.dart';
 import 'snackbar/SnackBarPage.dart';
+import 'constraint/BoxConstraintsPage.dart';
 
 class ComponentBean {
   String name;
@@ -77,6 +78,7 @@ List<ComponentBean> contentList = <ComponentBean>[
   ComponentBean("Progress", null, "进度条", "assets/images/illustration_23.jpg"),
   ComponentBean("Slider", null, "控制条", "assets/images/illustration_24.jpg"),
   ComponentBean("SnackBar", new SnackBarPage(), "SnackBar", "assets/images/illustration_24.jpg"),
+  ComponentBean("BoxConstraints", new BoxConstraintsPage(), "BoxConstraints", "assets/images/illustration_24.jpg"),
   ComponentBean("单个Item的ListView", null, "每个item都是同一种样式",
       "assets/images/illustration_25.jpg"),
   ComponentBean("多个Item的ListView", null, "一个列表有多个item的样式",
