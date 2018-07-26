@@ -4,6 +4,7 @@ import 'multiitem/MultiItemPage.dart';
 import 'radiotile/RadioTilePage.dart';
 import 'sliver/SliverListPage.dart';
 import 'multilevel/MultiLevelPage.dart';
+import 'dismiss/DismissListPage.dart';
 
 class ListViewList extends StatefulWidget {
   @override
@@ -25,6 +26,7 @@ class ListViewState extends State<ListViewList> {
     ListViewBean("可折叠的AppBar+ListView", SliverListPage()),
     ListViewBean("多条目的ListView的demo", MultiItemPage()),
     ListViewBean("多级列表Demo", MultiLevelPage()),
+    ListViewBean("可以横向删除的listview", DismissListPage()),
   ];
 
   Widget _buildRow(int index) {

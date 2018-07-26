@@ -45,6 +45,8 @@ List<ComponentBean> contentList = <ComponentBean>[
       "Scaffold", ScaffoldPage(), "脚手架", "assets/images/illustration_7.jpg"),
   ComponentBean(
       "Appbar", AppBarPage(), "就是AppBar嘛", "assets/images/illustration_8.jpg"),
+  ComponentBean("ListView", new ListViewList(), "ListView",
+      "assets/images/illustration_14.jpg"),
   ComponentBean("GridView", new GridViewList(), "网格布局",
       "assets/images/illustration_8.jpg"),
   ComponentBean(
@@ -59,8 +61,6 @@ List<ComponentBean> contentList = <ComponentBean>[
   ComponentBean("Wrap", null, "Wrap", "assets/images/illustration_12.jpg"),
   ComponentBean(
       "ListBody", null, "ListBodyBar", "assets/images/illustration_13.jpg"),
-  ComponentBean("ListView", new ListViewList(), "ListView",
-      "assets/images/illustration_14.jpg"),
   ComponentBean("CustomMultiChildLayout", null, "CustomMultiChildLayout",
       "assets/images/illustration_15.jpg"),
   ComponentBean(
@@ -77,12 +77,10 @@ List<ComponentBean> contentList = <ComponentBean>[
   ComponentBean("RadioGroup", null, "多选框", "assets/images/illustration_22.jpg"),
   ComponentBean("Progress", null, "进度条", "assets/images/illustration_23.jpg"),
   ComponentBean("Slider", null, "控制条", "assets/images/illustration_24.jpg"),
-  ComponentBean("SnackBar", new SnackBarPage(), "SnackBar", "assets/images/illustration_24.jpg"),
-  ComponentBean("BoxConstraints", new BoxConstraintsPage(), "BoxConstraints", "assets/images/illustration_24.jpg"),
-  ComponentBean("单个Item的ListView", null, "每个item都是同一种样式",
-      "assets/images/illustration_25.jpg"),
-  ComponentBean("多个Item的ListView", null, "一个列表有多个item的样式",
-      "assets/images/illustration_25.jpg"),
+  ComponentBean("SnackBar", new SnackBarPage(), "SnackBar",
+      "assets/images/illustration_24.jpg"),
+  ComponentBean("BoxConstraints", new BoxConstraintsPage(), "BoxConstraints",
+      "assets/images/illustration_24.jpg"),
   ComponentBean("FlexibleSpaceBar", null, "FlexibleSpaceBar",
       "assets/images/illustration_26.jpg"),
   ComponentBean("Cupertino风格控件", null, "Cupertino风格控件",

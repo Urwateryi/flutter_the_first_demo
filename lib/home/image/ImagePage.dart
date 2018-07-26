@@ -51,15 +51,18 @@ class ImagePage extends StatelessWidget {
                 fadeOutDuration: const Duration(milliseconds: 1200),
               ),
               const SizedBox(height: 10.0),
-              FadeInImage.assetNetwork(
-                placeholder: 'assets/images/illustration_25.jpg',
-                image:
-                    "http://img2.imgtn.bdimg.com/it/u=2077439690,3102871618&fm=27&gp=0.jpg",
-                width: 200.0,
-                height: 200.0,
-                fit: BoxFit.cover,
-                fadeInDuration: const Duration(milliseconds: 1200),
-                fadeOutDuration: const Duration(milliseconds: 1200),
+              Material(
+                child: FadeInImage.assetNetwork(
+                  placeholder: 'assets/images/ic_no_avatar.png',
+                  image:
+                      "https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3882265467,3924971696&fm=27&gp=0.jpg",
+                  width: 200.0,
+                  height: 200.0,
+                  fit: BoxFit.cover,
+                  fadeInDuration: const Duration(milliseconds: 1200),
+                  fadeOutDuration: const Duration(milliseconds: 1200),
+                ),
+                borderRadius: BorderRadius.circular(100.0),
               ),
               const SizedBox(height: 20.0),
               Container(
@@ -77,6 +80,11 @@ class ImagePage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20.0),
+              CircleAvatar(
+                child: Image(
+                  image: AssetImage('assets/images/illustration_15.jpg'),
+                ),
+              )
             ],
           ),
         ),
