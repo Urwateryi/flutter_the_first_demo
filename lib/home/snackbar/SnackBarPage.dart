@@ -40,9 +40,25 @@ Widget buildClicks(Widget child, BuildContext context) {
 
       final snackBar = new SnackBar(
         // SnackBar的主体内容
-        content: new Text(
-          '这是一个SnackBar',
-          style: new TextStyle(color: Colors.white),
+//        content: new Text(
+//          '这是一个SnackBar',
+//          style: new TextStyle(color: Colors.white),
+//        ),
+        content: Container(
+          child: Row(
+            children: <Widget>[
+              CircleAvatar(
+                backgroundImage:
+                    AssetImage("assets/images/illustration_10.jpg"),
+                radius: 15.0,
+              ),
+              SizedBox(width: 20.0),
+              Text(
+                "Zoey",
+                style: TextStyle(color: Colors.white, fontSize: 20.0),
+              )
+            ],
+          ),
         ),
         // 显示的时间，默认是1.5s 我这里设置的是5秒
         duration: new Duration(seconds: 5),

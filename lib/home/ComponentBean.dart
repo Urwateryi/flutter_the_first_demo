@@ -18,6 +18,7 @@ import 'key/KeyPage.dart';
 import 'listview/ListViewPage.dart';
 import 'snackbar/SnackBarPage.dart';
 import 'constraint/BoxConstraintsPage.dart';
+import 'behavior/BehaviorPage.dart';
 
 class ComponentBean {
   String name;
@@ -56,6 +57,8 @@ List<ComponentBean> contentList = <ComponentBean>[
       "assets/images/illustration_18.jpg"),
   ComponentBean("GlobalKey", new KeyPage(), "GlobalKeyPage",
       "assets/images/illustration_10.jpg"),
+  ComponentBean("SnackBar", new SnackBarPage(), "SnackBar",
+      "assets/images/illustration_24.jpg"),
   ComponentBean("Flow", null, "Flow", "assets/images/illustration_10.jpg"),
   ComponentBean("Table", null, "Table", "assets/images/illustration_11.jpg"),
   ComponentBean("Wrap", null, "Wrap", "assets/images/illustration_12.jpg"),
@@ -77,18 +80,14 @@ List<ComponentBean> contentList = <ComponentBean>[
   ComponentBean("RadioGroup", null, "多选框", "assets/images/illustration_22.jpg"),
   ComponentBean("Progress", null, "进度条", "assets/images/illustration_23.jpg"),
   ComponentBean("Slider", null, "控制条", "assets/images/illustration_24.jpg"),
-  ComponentBean("SnackBar", new SnackBarPage(), "SnackBar",
-      "assets/images/illustration_24.jpg"),
   ComponentBean("BoxConstraints", new BoxConstraintsPage(), "BoxConstraints",
       "assets/images/illustration_24.jpg"),
   ComponentBean("FlexibleSpaceBar", null, "FlexibleSpaceBar",
       "assets/images/illustration_26.jpg"),
   ComponentBean("Cupertino风格控件", null, "Cupertino风格控件",
       "assets/images/illustration_27.jpg"),
-  ComponentBean("手势GestureDetector", null, "Dismissed等",
-      "assets/images/illustration_28.jpg"),
   ComponentBean(
-      "behavior", null, "behavior", "assets/images/illustration_29.jpg"),
+      "behavior", new BehaviorPage(), "behavior", "assets/images/illustration_29.jpg"),
   ComponentBean(
       "Expanded", null, "Expanded", "assets/images/illustration_30.jpg"),
   ComponentBean("集合", null, "集合", "assets/images/illustration_31.jpg"),
