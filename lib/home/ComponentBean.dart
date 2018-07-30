@@ -19,6 +19,7 @@ import 'listview/ListViewPage.dart';
 import 'snackbar/SnackBarPage.dart';
 import 'constraint/BoxConstraintsPage.dart';
 import 'behavior/BehaviorPage.dart';
+import 'cupertino/CupertinoPage.dart';
 
 class ComponentBean {
   String name;
@@ -59,6 +60,8 @@ List<ComponentBean> contentList = <ComponentBean>[
       "assets/images/illustration_10.jpg"),
   ComponentBean("SnackBar", new SnackBarPage(), "SnackBar",
       "assets/images/illustration_24.jpg"),
+  ComponentBean("Cupertino风格控件", new CupertinoPage(), "Cupertino风格控件",
+      "assets/images/illustration_27.jpg"),
   ComponentBean("Flow", null, "Flow", "assets/images/illustration_10.jpg"),
   ComponentBean("Table", null, "Table", "assets/images/illustration_11.jpg"),
   ComponentBean("Wrap", null, "Wrap", "assets/images/illustration_12.jpg"),
@@ -66,6 +69,7 @@ List<ComponentBean> contentList = <ComponentBean>[
       "ListBody", null, "ListBodyBar", "assets/images/illustration_13.jpg"),
   ComponentBean("CustomMultiChildLayout", null, "CustomMultiChildLayout",
       "assets/images/illustration_15.jpg"),
+  ComponentBean("Swiper", null, "Swiper", "assets/images/illustration_27.jpg"),
   ComponentBean(
       "Input", new InputPage(), "输入框", "assets/images/illustration_16.jpg"),
   ComponentBean(
@@ -82,12 +86,14 @@ List<ComponentBean> contentList = <ComponentBean>[
   ComponentBean("Slider", null, "控制条", "assets/images/illustration_24.jpg"),
   ComponentBean("BoxConstraints", new BoxConstraintsPage(), "BoxConstraints",
       "assets/images/illustration_24.jpg"),
+  ComponentBean(
+      "下拉刷新，上拉加载更多", null, "下拉刷新，上拉加载更多", "assets/images/illustration_27.jpg"),
+  ComponentBean("SliverAppBar", null, "SliverAppBar",
+      "assets/images/illustration_27.jpg"),
   ComponentBean("FlexibleSpaceBar", null, "FlexibleSpaceBar",
       "assets/images/illustration_26.jpg"),
-  ComponentBean("Cupertino风格控件", null, "Cupertino风格控件",
-      "assets/images/illustration_27.jpg"),
-  ComponentBean(
-      "behavior", new BehaviorPage(), "behavior", "assets/images/illustration_29.jpg"),
+  ComponentBean("behavior", new BehaviorPage(), "behavior",
+      "assets/images/illustration_29.jpg"),
   ComponentBean(
       "Expanded", null, "Expanded", "assets/images/illustration_30.jpg"),
   ComponentBean("集合", null, "集合", "assets/images/illustration_31.jpg"),
@@ -103,8 +109,6 @@ List<ComponentBean> contentList = <ComponentBean>[
       "全局变量", null, "全局变量的定义与使用", "assets/images/illustration_27.jpg"),
   ComponentBean("DropdownButton", null, "DropdownButton",
       "assets/images/illustration_28.jpg"),
-  ComponentBean(
-      "FlatButton", null, "FlatButton", "assets/images/illustration_29.jpg"),
   ComponentBean("FloatingActionButton", null, "FloatingActionButton",
       "assets/images/illustration_30.jpg"),
   ComponentBean(
@@ -114,8 +118,6 @@ List<ComponentBean> contentList = <ComponentBean>[
       "TextField", null, "TextField", "assets/images/illustration_33.jpg"),
   ComponentBean("动画", null, "动画", "assets/images/illustration_34.jpg"),
   ComponentBean(
-      "SizedBox", null, "SizedBox", "assets/images/illustration_34.jpg"),
-  ComponentBean(
       "ListTile", null, "ListTile", "assets/images/illustration_34.jpg"),
   ComponentBean("字体", null, "字体", "assets/images/illustration_35.jpg"),
   ComponentBean("盒约束", null, "盒约束", "assets/images/illustration_27.jpg"),
@@ -124,11 +126,6 @@ List<ComponentBean> contentList = <ComponentBean>[
   ComponentBean("纸墨设计", null, "纸墨设计", "assets/images/illustration_27.jpg"),
   ComponentBean("Flutter templates", null, "Flutter templates",
       "assets/images/illustration_27.jpg"),
-  ComponentBean("Swiper", null, "Swiper", "assets/images/illustration_27.jpg"),
   ComponentBean(
       "template", null, "template", "assets/images/illustration_27.jpg"),
-  ComponentBean(
-      "下拉刷新，上拉加载更多", null, "下拉刷新，上拉加载更多", "assets/images/illustration_27.jpg"),
-  ComponentBean("SliverAppBar", null, "SliverAppBar",
-      "assets/images/illustration_27.jpg"),
 ];
