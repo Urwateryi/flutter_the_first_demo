@@ -20,6 +20,7 @@ import 'snackbar/SnackBarPage.dart';
 import 'constraint/BoxConstraintsPage.dart';
 import 'behavior/BehaviorPage.dart';
 import 'cupertino/CupertinoPage.dart';
+import 'swiper/SwiperPage.dart';
 
 class ComponentBean {
   String name;
@@ -69,7 +70,7 @@ List<ComponentBean> contentList = <ComponentBean>[
       "ListBody", null, "ListBodyBar", "assets/images/illustration_13.jpg"),
   ComponentBean("CustomMultiChildLayout", null, "CustomMultiChildLayout",
       "assets/images/illustration_15.jpg"),
-  ComponentBean("Swiper", null, "Swiper", "assets/images/illustration_27.jpg"),
+  ComponentBean("Swiper", new SwiperPage(), "Swiper", "assets/images/illustration_27.jpg"),
   ComponentBean(
       "Input", new InputPage(), "输入框", "assets/images/illustration_16.jpg"),
   ComponentBean(
