@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:the_first_one/utils/PageUtil.dart';
 import 'multiitem/MultiItemPage.dart';
@@ -7,6 +8,7 @@ import 'multilevel/MultiLevelPage.dart';
 import 'dismiss/DismissListPage.dart';
 
 class ListViewList extends StatefulWidget {
+
   @override
   State<ListViewList> createState() {
     return ListViewState();
@@ -21,6 +23,9 @@ class ListViewBean {
 }
 
 class ListViewState extends State<ListViewList> {
+
+  bool loading = true;
+
   List<ListViewBean> contentList = <ListViewBean>[
     ListViewBean("ListView的RadioListTile的切换", RadioTilePage()),
     ListViewBean("可折叠的AppBar+ListView", SliverListPage()),
@@ -44,17 +49,31 @@ class ListViewState extends State<ListViewList> {
     );
   }
 
+//  getLoading(){
+//    return new Center(
+//      child: CircularProgressIndicator(),
+//    );
+//  }
+//
+//  getBody(){
+//    if(loading)
+//      return getLoading();
+//  }
+
   Widget _buildList() {
     return Container(
       color: Colors.white,
-      child: ListView.builder(
-        padding: const EdgeInsets.all(16.0),
-        itemCount: contentList.length * 2,
-        itemBuilder: (context, position) {
-          if (position.isOdd) return Divider(height: 1.0, color: Colors.grey);
-          final index = position ~/ 2; //整除
-          return _buildRow(index);
-        },
+      child: RefreshIndicator(
+        onRefresh: null,
+        child: ListView.builder(
+          padding: const EdgeInsets.all(16.0),
+          itemCount: contentList.length * 2,
+          itemBuilder: (context, position) {
+            if (position.isOdd) return Divider(height: 1.0, color: Colors.grey);
+            final index = position ~/ 2; //整除
+            return _buildRow(index);
+          },
+        ),
       ),
     );
   }
