@@ -6,9 +6,9 @@ import 'radiotile/RadioTilePage.dart';
 import 'sliver/SliverListPage.dart';
 import 'multilevel/MultiLevelPage.dart';
 import 'dismiss/DismissListPage.dart';
+import 'withhoritallistview/WithHorListViewPage.dart';
 
 class ListViewList extends StatefulWidget {
-
   @override
   State<ListViewList> createState() {
     return ListViewState();
@@ -23,7 +23,6 @@ class ListViewBean {
 }
 
 class ListViewState extends State<ListViewList> {
-
   bool loading = true;
 
   List<ListViewBean> contentList = <ListViewBean>[
@@ -32,6 +31,7 @@ class ListViewState extends State<ListViewList> {
     ListViewBean("多条目的ListView的demo", MultiItemPage()),
     ListViewBean("多级列表Demo", MultiLevelPage()),
     ListViewBean("可以横向删除的listview", DismissListPage()),
+    ListViewBean("嵌套ListView", WithHorListViewPage()),
   ];
 
   Widget _buildRow(int index) {
@@ -49,31 +49,17 @@ class ListViewState extends State<ListViewList> {
     );
   }
 
-//  getLoading(){
-//    return new Center(
-//      child: CircularProgressIndicator(),
-//    );
-//  }
-//
-//  getBody(){
-//    if(loading)
-//      return getLoading();
-//  }
-
   Widget _buildList() {
     return Container(
       color: Colors.white,
-      child: RefreshIndicator(
-        onRefresh: null,
-        child: ListView.builder(
-          padding: const EdgeInsets.all(16.0),
-          itemCount: contentList.length * 2,
-          itemBuilder: (context, position) {
-            if (position.isOdd) return Divider(height: 1.0, color: Colors.grey);
-            final index = position ~/ 2; //整除
-            return _buildRow(index);
-          },
-        ),
+      child: ListView.builder(
+        padding: const EdgeInsets.all(16.0),
+        itemCount: contentList.length * 2,
+        itemBuilder: (context, position) {
+          if (position.isOdd) return Divider(height: 1.0, color: Colors.grey);
+          final index = position ~/ 2; //整除
+          return _buildRow(index);
+        },
       ),
     );
   }
