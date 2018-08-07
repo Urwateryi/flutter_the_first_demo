@@ -1,24 +1,20 @@
 import 'package:flutter/material.dart';
 
-class BottomComponent extends StatefulWidget {
+class BottomComponent2 extends StatefulWidget {
   final IconData icons;
   final MaterialColor color;
   final String btnName;
   final GestureTapCallback onTap;
 
-  BottomComponent(
-      {@required this.icons,
-      @required this.btnName,
-      this.color = Colors.grey,
-      this.onTap});
+  BottomComponent2(this.icons, this.btnName, {this.color= Colors.grey, this.onTap});
 
   @override
-  State<BottomComponent> createState() {
-    return BottomComponentState();
+  State<BottomComponent2> createState() {
+    return BottomComponent2State();
   }
 }
 
-class BottomComponentState extends State<BottomComponent> {
+class BottomComponent2State extends State<BottomComponent2> {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(

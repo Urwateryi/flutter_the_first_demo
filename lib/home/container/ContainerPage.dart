@@ -257,6 +257,7 @@ class ContainerPage extends StatelessWidget {
               BottomComponent(
                 icons: Icons.favorite_border,
                 btnName: '喜欢',
+                color: Colors.red,
               ),
               BottomComponent(
                 icons: Icons.share,
