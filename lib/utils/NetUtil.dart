@@ -19,7 +19,9 @@ class NetUtil {
       url += paramStr;
     }
 
-    callBack(await Dio().get(url));
+    Response<String> response=await Dio().get(url);
+    print("statusCode :" + response.statusCode.toString());
+    callBack(response);
   }
 
   //post请求

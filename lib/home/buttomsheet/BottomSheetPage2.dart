@@ -38,6 +38,10 @@ class BottomSheet2State extends State<BottomSheetPage2> {
                 BottomComponent2(
                   Icons.favorite_border,
                   '喜欢',
+                  color: Colors.grey,
+                  onTap: (){
+
+                  },
                 ),
                 BottomComponent2(
                   Icons.share,

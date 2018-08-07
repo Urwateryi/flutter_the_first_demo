@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:dio/dio.dart';
 import 'package:the_first_one/components/LoadingComponent.dart';
+import 'package:the_first_one/utils/NetUtil2.dart';
 
 class DioTestPage extends StatefulWidget {
   @override
@@ -30,10 +30,15 @@ class _DioTestPageState extends State<DioTestPage> {
     return content == '' ? LoadingComponent() : Text(content);
   }
 
-  void getList() async {
-    Response<String> response = await Dio().get("https://www.baidu.com/");
-    setState(() {
-      content = response.data;
+  void getList() {
+    NetUtil2.get("https://www.baidu.com/", (response) {
+      setState(() {
+        content = response.data;
+      });
+    },errorCallBack: (errorMsg){
+      setState(() {
+        content = errorMsg;
+      });
     });
   }
 }
