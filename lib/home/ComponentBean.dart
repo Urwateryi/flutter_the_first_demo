@@ -23,6 +23,7 @@ import 'cupertino/CupertinoPage.dart';
 import 'swiper/SwiperPage.dart';
 import 'animation/AnimationPage.dart';
 import 'loadingdialog/LoadingDialogPage3.dart';
+import 'dio/DioTestPage.dart';
 
 class ComponentBean {
   String name;
@@ -68,6 +69,8 @@ List<ComponentBean> contentList = <ComponentBean>[
   ComponentBean("Animation", AnimationPage(), "Animation",
       "assets/images/illustration_34.jpg"),
   ComponentBean("LoadDialog", LoadingDialogPage3(), "LoadDialog",
+      "assets/images/illustration_34.jpg"),
+  ComponentBean("DioTestPage", DioTestPage(), "使用第三方库Dio",
       "assets/images/illustration_34.jpg"),
   ComponentBean("Flow", null, "Flow", "assets/images/illustration_10.jpg"),
   ComponentBean("Table", null, "Table", "assets/images/illustration_11.jpg"),
