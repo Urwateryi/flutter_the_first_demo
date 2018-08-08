@@ -24,6 +24,8 @@ import 'swiper/SwiperPage.dart';
 import 'animation/AnimationPage.dart';
 import 'loadingdialog/LoadingDialogPage3.dart';
 import 'dio/DioTestPage.dart';
+import 'refresh/RefreshPage.dart';
+import 'refresh/RefreshPage2.dart';
 
 class ComponentBean {
   String name;
@@ -97,7 +99,7 @@ List<ComponentBean> contentList = <ComponentBean>[
   ComponentBean("BoxConstraints", BoxConstraintsPage(), "BoxConstraints",
       "assets/images/illustration_24.jpg"),
   ComponentBean(
-      "下拉刷新，上拉加载更多", null, "下拉刷新，上拉加载更多", "assets/images/illustration_27.jpg"),
+      "下拉刷新，上拉加载更多", RefreshPage2(), "下拉刷新，上拉加载更多", "assets/images/illustration_27.jpg"),
   ComponentBean("SliverAppBar", null, "SliverAppBar",
       "assets/images/illustration_27.jpg"),
   ComponentBean("FlexibleSpaceBar", null, "FlexibleSpaceBar",

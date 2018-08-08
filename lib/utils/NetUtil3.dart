@@ -1,7 +1,8 @@
 import 'package:dio/dio.dart';
+import 'dart:convert';
 import 'package:the_first_one/model/Api.dart';
 
-class NetUtil2 {
+class NetUtil3 {
   static const String GET = "get";
   static const String POST = "post";
 
@@ -14,6 +15,8 @@ class NetUtil2 {
 
     //组合GET请求的参数
     if (params != null && params.isNotEmpty) {
+      print("params!=null");
+
       StringBuffer sb = new StringBuffer("?");
       params.forEach((key, value) {
         sb.write("$key" + "=" + "$value" + "&");
@@ -37,13 +40,16 @@ class NetUtil2 {
   //公共代码部分
   static void _request(String url, Function callBack,
       {String method,
-      Map<String, String> params,
-      Function errorCallBack}) async {
+        Map<String, String> params,
+        Function errorCallBack}) async {
+
+    print("url :" + url);
+
     String errorMsg = "";
     int statusCode;
 
     try {
-      Response<String> response;
+      Response response;
 
       if (method == GET) {
         response = await Dio().get(url);
@@ -61,8 +67,8 @@ class NetUtil2 {
       }
 
       if (callBack != null) {
-        callBack(response);
-        print("response :" + response.data);
+        Map<String,Map<String,String>> map=json.decode(response.data.toString());
+        print("response :" + map["data"]["data"]);
       }
     } catch (exception) {
       _handError(errorCallBack, exception.toString());
