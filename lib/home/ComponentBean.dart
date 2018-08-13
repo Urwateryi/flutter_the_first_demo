@@ -26,6 +26,7 @@ import 'loadingdialog/LoadingDialogPage3.dart';
 import 'dio/DioTestPage.dart';
 import 'refresh/RefreshPage.dart';
 import 'refresh/RefreshPage2.dart';
+import 'package:the_first_one/home/jsonserializable/JsonSeralizablePage.dart';
 
 class ComponentBean {
   String name;
@@ -51,6 +52,8 @@ List<ComponentBean> contentList = <ComponentBean>[
       "assets/images/illustration_6.jpg"),
   ComponentBean(
       "Scaffold", ScaffoldPage(), "脚手架", "assets/images/illustration_7.jpg"),
+  ComponentBean(
+      "json_serializable", JsonSeralizablePage(), "json_serializable", "assets/images/illustration_7.jpg"),
   ComponentBean(
       "Appbar", AppBarPage(), "就是AppBar嘛", "assets/images/illustration_8.jpg"),
   ComponentBean("ListView", ListViewList(), "ListView",
