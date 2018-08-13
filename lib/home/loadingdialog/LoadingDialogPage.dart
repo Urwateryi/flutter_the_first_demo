@@ -61,7 +61,7 @@ class LoadingDialogPageState extends State<LoadingDialogPage> {
     String dataURL = "https://jsonplaceholder.typicode.com/posts";
     http.Response response = await http.get(dataURL);
     setState(() {
-      widgets = JSON.decode(response.body);
+      widgets = json.decode(response.body);
     });
   }
 }

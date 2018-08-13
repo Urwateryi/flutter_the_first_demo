@@ -24,7 +24,7 @@ class LoadingDialogPage3State extends State<LoadingDialogPage3> {
     await http
         .get("http://www.wanandroid.com/project/list/1/json?cid=1")
         .then((http.Response response) {
-      var convertDataToJson = JSON.decode(response.body);
+      var convertDataToJson = json.decode(response.body);
       convertDataToJson = convertDataToJson["data"]["datas"];
 
       print(convertDataToJson);
