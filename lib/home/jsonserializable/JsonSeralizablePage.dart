@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:dio/dio.dart';
 import 'package:the_first_one/model/user.dart';
+import 'package:the_first_one/utils/NetUtil4.dart';
 
 class JsonSeralizablePage extends StatefulWidget {
   @override
@@ -54,15 +55,17 @@ class _JsonSeralizablePageState extends State<JsonSeralizablePage> {
     getContent();
   }
 
-  void getContent() async {
-    Response response =
-        await Dio().get("http://www.mocky.io/v2/5b7129a63200007600f36baf");
-    User user = User.fromJson(response.data);
+  void getContent() {
+    NetUtil4.get("http://www.mocky.io/v2/5b7143ae3200001402f36c46", (data) {
+      User user = User.fromJson(data);
+      setState(() {
+        name = user.name;
+        email = user.email;
+        picList = user.pics;
+      });
 
-    setState(() {
-      name = user.name;
-      email = user.email;
-      picList = user.pics;
+    }, errorCallBack: (errorMsg) {
+      print("error:>>>>>" + errorMsg);
     });
   }
 }
