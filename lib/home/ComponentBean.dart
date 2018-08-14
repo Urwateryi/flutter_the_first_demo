@@ -27,6 +27,7 @@ import 'dio/DioTestPage.dart';
 import 'refresh/RefreshPage.dart';
 import 'refresh/RefreshPage2.dart';
 import 'package:the_first_one/home/jsonserializable/JsonSeralizablePage.dart';
+import 'pageview/PageViewPage.dart';
 
 class ComponentBean {
   String name;
@@ -99,6 +100,7 @@ List<ComponentBean> contentList = <ComponentBean>[
   ComponentBean("RadioGroup", null, "多选框", "assets/images/illustration_22.jpg"),
   ComponentBean("Progress", null, "进度条", "assets/images/illustration_23.jpg"),
   ComponentBean("Slider", null, "控制条", "assets/images/illustration_24.jpg"),
+  ComponentBean("PageView", PageViewPage(), "PageView", "assets/images/illustration_24.jpg"),
   ComponentBean("BoxConstraints", BoxConstraintsPage(), "BoxConstraints",
       "assets/images/illustration_24.jpg"),
   ComponentBean(

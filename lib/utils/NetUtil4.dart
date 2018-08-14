@@ -2,6 +2,7 @@ import 'package:dio/dio.dart';
 import 'dart:convert';
 import 'package:the_first_one/model/Api.dart';
 
+//要查网络请求的日志可以使用过滤<net>
 class NetUtil4 {
   static const String GET = "get";
   static const String POST = "post";
@@ -11,19 +12,6 @@ class NetUtil4 {
       {Map<String, String> params, Function errorCallBack}) async {
     if (!url.startsWith("http")) {
       url = Api.BaseUrl + url;
-    }
-
-    //组合GET请求的参数
-    if (params != null && params.isNotEmpty) {
-      print("params!=null");
-
-      StringBuffer sb = new StringBuffer("?");
-      params.forEach((key, value) {
-        sb.write("$key" + "=" + "$value" + "&");
-      });
-      String paramStr = sb.toString();
-      paramStr = paramStr.substring(0, paramStr.length - 1);
-      url += paramStr;
     }
 
     _request(url, callBack,
@@ -57,18 +45,35 @@ class NetUtil4 {
       {String method,
       Map<String, String> params,
       Function errorCallBack}) async {
-    print("url :" + url);
+    print("<net> url :<" + method + ">" + url);
+
+    if (params != null && params.isNotEmpty) {
+      print("<net> params :" + params.toString());
+    }
 
     String errorMsg = "";
     int statusCode;
 
     try {
       Response response;
-
       if (method == GET) {
+        //组合GET请求的参数
+        if (params != null && params.isNotEmpty) {
+          StringBuffer sb = new StringBuffer("?");
+          params.forEach((key, value) {
+            sb.write("$key" + "=" + "$value" + "&");
+          });
+          String paramStr = sb.toString();
+          paramStr = paramStr.substring(0, paramStr.length - 1);
+          url += paramStr;
+        }
         response = await Dio().get(url);
       } else {
-        response = await Dio().post(url, data:params);
+        if (params != null && params.isNotEmpty) {
+          response = await Dio().post(url, data: params);
+        } else {
+          response = await Dio().post(url);
+        }
       }
 
       statusCode = response.statusCode;
@@ -82,6 +87,7 @@ class NetUtil4 {
 
       if (callBack != null) {
         callBack(response.data["data"]);
+        print("<net> response data:" + response.data["data"]);
       }
     } catch (exception) {
       _handError(errorCallBack, exception.toString());
@@ -93,6 +99,6 @@ class NetUtil4 {
     if (errorCallback != null) {
       errorCallback(errorMsg);
     }
-    print("errorMsg :" + errorMsg);
+    print("<net> errorMsg :" + errorMsg);
   }
 }
