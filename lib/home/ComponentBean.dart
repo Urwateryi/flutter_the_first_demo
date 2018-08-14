@@ -28,6 +28,7 @@ import 'refresh/RefreshPage.dart';
 import 'refresh/RefreshPage2.dart';
 import 'package:the_first_one/home/jsonserializable/JsonSeralizablePage.dart';
 import 'pageview/PageViewPage.dart';
+import 'database/DBPage.dart';
 
 class ComponentBean {
   String name;
@@ -118,7 +119,7 @@ List<ComponentBean> contentList = <ComponentBean>[
       "const和的区别", null, "const和的区别", "assets/images/illustration_32.jpg"),
   ComponentBean(
       "自定义控件", null, "自定义有状态或者无状态的控件", "assets/images/illustration_33.jpg"),
-  ComponentBean("缓存", null, "有没有sharedprenference或者sqlite等",
+  ComponentBean("缓存", DBPage(), "DBPage",
       "assets/images/illustration_34.jpg"),
   ComponentBean("网络请求", null, "网络请求封装", "assets/images/illustration_35.jpg"),
   ComponentBean("工具类", null, "工具类的封装与使用", "assets/images/illustration_26.jpg"),
