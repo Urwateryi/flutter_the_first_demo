@@ -37,7 +37,6 @@ class NetUtil4 {
         method: POST, params: params, errorCallBack: errorCallBack);
   }
 
-
 //  {
 //  "statusCode": 1,
 //  "data": {
@@ -56,9 +55,8 @@ class NetUtil4 {
   //公共代码部分
   static void _request(String url, Function callBack,
       {String method,
-        Map<String, String> params,
-        Function errorCallBack}) async {
-
+      Map<String, String> params,
+      Function errorCallBack}) async {
     print("url :" + url);
 
     String errorMsg = "";
@@ -70,7 +68,7 @@ class NetUtil4 {
       if (method == GET) {
         response = await Dio().get(url);
       } else {
-        response = await Dio().post(url);
+        response = await Dio().post(url, data:params);
       }
 
       statusCode = response.statusCode;
