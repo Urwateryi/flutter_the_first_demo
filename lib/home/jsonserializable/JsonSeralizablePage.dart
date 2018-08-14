@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:dio/dio.dart';
 import 'package:the_first_one/model/user.dart';
 import 'package:the_first_one/utils/NetUtil4.dart';
 
@@ -55,6 +54,7 @@ class _JsonSeralizablePageState extends State<JsonSeralizablePage> {
     getContent();
   }
 
+  //获取网络数据
   void getContent() {
     NetUtil4.get("http://www.mocky.io/v2/5b7143ae3200001402f36c46", (data) {
       User user = User.fromJson(data);
@@ -63,9 +63,8 @@ class _JsonSeralizablePageState extends State<JsonSeralizablePage> {
         email = user.email;
         picList = user.pics;
       });
-
     }, errorCallBack: (errorMsg) {
-      print("error:>>>>>" + errorMsg);
+      print("error:" + errorMsg);
     });
   }
 }
