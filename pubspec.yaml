@@ -45,9 +45,18 @@ flutter:
   # the material Icons class.
   uses-material-design: true
   fonts:
-      - family: 华康童童体
-        fonts:
-          - asset: fonts/华康童童体.ttc
+    - family: 华康童童体
+      fonts:
+        - asset: fonts/华康童童体.ttc
+
+    - family: simkai
+      fonts:
+        - asset: fonts/simkai.ttf
+
+    - family: HYQiHei-30F
+      fonts:
+        - asset: fonts/HYQiHei-30F.ttf
+          weight: 200
   assets:
       - assets/images/ic_no_avatar.png
       - assets/images/illustration_1.jpg

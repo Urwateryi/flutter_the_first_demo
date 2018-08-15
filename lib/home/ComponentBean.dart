@@ -24,12 +24,12 @@ import 'swiper/SwiperPage.dart';
 import 'animation/AnimationPage.dart';
 import 'loadingdialog/LoadingDialogPage3.dart';
 import 'dio/DioTestPage.dart';
-import 'refresh/RefreshPage.dart';
 import 'refresh/RefreshPage2.dart';
 import 'package:the_first_one/home/jsonserializable/JsonSeralizablePage.dart';
 import 'pageview/PageViewPage.dart';
 import 'database/DBPage.dart';
 import 'font/FontPage.dart';
+import 'collection/CollectionPage.dart';
 
 class ComponentBean {
   String name;
@@ -55,8 +55,8 @@ List<ComponentBean> contentList = <ComponentBean>[
       "assets/images/illustration_6.jpg"),
   ComponentBean(
       "Scaffold", ScaffoldPage(), "脚手架", "assets/images/illustration_7.jpg"),
-  ComponentBean(
-      "json_serializable", JsonSeralizablePage(), "json_serializable", "assets/images/illustration_7.jpg"),
+  ComponentBean("json_serializable", JsonSeralizablePage(), "json_serializable",
+      "assets/images/illustration_7.jpg"),
   ComponentBean(
       "Appbar", AppBarPage(), "就是AppBar嘛", "assets/images/illustration_8.jpg"),
   ComponentBean("ListView", ListViewList(), "ListView",
@@ -101,11 +101,12 @@ List<ComponentBean> contentList = <ComponentBean>[
   ComponentBean("CheckBox", null, "单选框", "assets/images/illustration_21.jpg"),
   ComponentBean("RadioGroup", null, "多选框", "assets/images/illustration_22.jpg"),
   ComponentBean("Progress", null, "进度条", "assets/images/illustration_23.jpg"),
-  ComponentBean("PageView", PageViewPage(), "PageView", "assets/images/illustration_24.jpg"),
+  ComponentBean("PageView", PageViewPage(), "PageView",
+      "assets/images/illustration_24.jpg"),
   ComponentBean("BoxConstraints", BoxConstraintsPage(), "BoxConstraints",
       "assets/images/illustration_24.jpg"),
-  ComponentBean(
-      "下拉刷新，上拉加载更多", RefreshPage2(), "下拉刷新，上拉加载更多", "assets/images/illustration_27.jpg"),
+  ComponentBean("下拉刷新，上拉加载更多", RefreshPage2(), "下拉刷新，上拉加载更多",
+      "assets/images/illustration_27.jpg"),
   ComponentBean("SliverAppBar", null, "SliverAppBar",
       "assets/images/illustration_27.jpg"),
   ComponentBean("FlexibleSpaceBar", null, "FlexibleSpaceBar",
@@ -114,18 +115,19 @@ List<ComponentBean> contentList = <ComponentBean>[
       "assets/images/illustration_29.jpg"),
   ComponentBean(
       "Expanded", null, "Expanded", "assets/images/illustration_30.jpg"),
-  ComponentBean("集合", null, "集合", "assets/images/illustration_31.jpg"),
+  ComponentBean(
+      "集合", CollectionPage(), "集合", "assets/images/illustration_31.jpg"),
   ComponentBean(
       "const和的区别", null, "const和的区别", "assets/images/illustration_32.jpg"),
-  ComponentBean("缓存", DBPage(), "DBPage",
-      "assets/images/illustration_34.jpg"),
+  ComponentBean("缓存", DBPage(), "DBPage", "assets/images/illustration_34.jpg"),
   ComponentBean(
       "全局变量", null, "全局变量的定义与使用", "assets/images/illustration_27.jpg"),
   ComponentBean(
       "IconButton", null, "IconButton", "assets/images/illustration_31.jpg"),
   ComponentBean(
       "ListTile", null, "ListTile", "assets/images/illustration_34.jpg"),
-  ComponentBean("自定义字体", FontPage(), "使用自定义字体", "assets/images/illustration_35.jpg"),
+  ComponentBean(
+      "自定义字体", FontPage(), "使用自定义字体", "assets/images/illustration_35.jpg"),
   ComponentBean("盒约束", null, "盒约束", "assets/images/illustration_27.jpg"),
   ComponentBean("国际化", null, "国际化", "assets/images/illustration_27.jpg"),
   ComponentBean("Flutter templates", null, "Flutter templates",
