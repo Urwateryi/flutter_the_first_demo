@@ -44,6 +44,10 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
+  fonts:
+      - family: 华康童童体
+        fonts:
+          - asset: fonts/华康童童体.ttc
   assets:
       - assets/images/ic_no_avatar.png
       - assets/images/illustration_1.jpg

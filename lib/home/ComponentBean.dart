@@ -29,6 +29,7 @@ import 'refresh/RefreshPage2.dart';
 import 'package:the_first_one/home/jsonserializable/JsonSeralizablePage.dart';
 import 'pageview/PageViewPage.dart';
 import 'database/DBPage.dart';
+import 'font/FontPage.dart';
 
 class ComponentBean {
   String name;
@@ -100,7 +101,6 @@ List<ComponentBean> contentList = <ComponentBean>[
   ComponentBean("CheckBox", null, "单选框", "assets/images/illustration_21.jpg"),
   ComponentBean("RadioGroup", null, "多选框", "assets/images/illustration_22.jpg"),
   ComponentBean("Progress", null, "进度条", "assets/images/illustration_23.jpg"),
-  ComponentBean("Slider", null, "控制条", "assets/images/illustration_24.jpg"),
   ComponentBean("PageView", PageViewPage(), "PageView", "assets/images/illustration_24.jpg"),
   ComponentBean("BoxConstraints", BoxConstraintsPage(), "BoxConstraints",
       "assets/images/illustration_24.jpg"),
@@ -117,30 +117,17 @@ List<ComponentBean> contentList = <ComponentBean>[
   ComponentBean("集合", null, "集合", "assets/images/illustration_31.jpg"),
   ComponentBean(
       "const和的区别", null, "const和的区别", "assets/images/illustration_32.jpg"),
-  ComponentBean(
-      "自定义控件", null, "自定义有状态或者无状态的控件", "assets/images/illustration_33.jpg"),
   ComponentBean("缓存", DBPage(), "DBPage",
       "assets/images/illustration_34.jpg"),
-  ComponentBean("网络请求", null, "网络请求封装", "assets/images/illustration_35.jpg"),
-  ComponentBean("工具类", null, "工具类的封装与使用", "assets/images/illustration_26.jpg"),
   ComponentBean(
       "全局变量", null, "全局变量的定义与使用", "assets/images/illustration_27.jpg"),
-  ComponentBean("DropdownButton", null, "DropdownButton",
-      "assets/images/illustration_28.jpg"),
-  ComponentBean("FloatingActionButton", null, "FloatingActionButton",
-      "assets/images/illustration_30.jpg"),
   ComponentBean(
       "IconButton", null, "IconButton", "assets/images/illustration_31.jpg"),
-  ComponentBean("Switch", null, "Switch", "assets/images/illustration_32.jpg"),
-  ComponentBean(
-      "TextField", null, "TextField", "assets/images/illustration_33.jpg"),
   ComponentBean(
       "ListTile", null, "ListTile", "assets/images/illustration_34.jpg"),
-  ComponentBean("字体", null, "字体", "assets/images/illustration_35.jpg"),
+  ComponentBean("自定义字体", FontPage(), "使用自定义字体", "assets/images/illustration_35.jpg"),
   ComponentBean("盒约束", null, "盒约束", "assets/images/illustration_27.jpg"),
   ComponentBean("国际化", null, "国际化", "assets/images/illustration_27.jpg"),
-  ComponentBean("质感设计", null, "质感设计", "assets/images/illustration_27.jpg"),
-  ComponentBean("纸墨设计", null, "纸墨设计", "assets/images/illustration_27.jpg"),
   ComponentBean("Flutter templates", null, "Flutter templates",
       "assets/images/illustration_27.jpg"),
   ComponentBean(
