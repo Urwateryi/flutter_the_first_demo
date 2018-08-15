@@ -3,7 +3,7 @@ import 'package:the_first_one/utils/PageUtil.dart';
 import 'list/ListPage.dart';
 import 'map/MapPage.dart';
 
-List<String> typeList = ["List", "Map"];
+List<String> typeList = ["List", "Map", "Set"];
 
 class CollectionPage extends StatefulWidget {
   @override

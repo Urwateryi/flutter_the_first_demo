@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'PrintListPage.dart';
 import 'package:the_first_one/utils/PageUtil.dart';
+import 'TestLengthPage.dart';
 
 class ComponentBean {
   String name;
@@ -10,6 +11,7 @@ class ComponentBean {
 }
 
 List<ComponentBean> listTypeList = [
+  ComponentBean("测试长度", TestLengthPage()),
   ComponentBean("输出", PrintListPage()),
   ComponentBean("增加", PrintListPage()),
   ComponentBean("删除", PrintListPage()),
