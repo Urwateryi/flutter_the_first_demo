@@ -45,10 +45,6 @@ flutter:
   # the material Icons class.
   uses-material-design: true
   fonts:
-    - family: 华康童童体
-      fonts:
-        - asset: fonts/华康童童体.ttc
-
     - family: simkai
       fonts:
         - asset: fonts/simkai.ttf
