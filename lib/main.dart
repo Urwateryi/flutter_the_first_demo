@@ -17,7 +17,10 @@ final ThemeData kDefaultTheme = ThemeData(
   primarySwatch: Colors.blueGrey,
   primaryColor: Colors.blueGrey,
   accentColor: Colors.orangeAccent,
-  fontFamily: "simkai",
+  fontFamily: "HYQiHei-30F",
+  textTheme: TextTheme(
+
+  )
 );
 
 class Main extends StatefulWidget {
