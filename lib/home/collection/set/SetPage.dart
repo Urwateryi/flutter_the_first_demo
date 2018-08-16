@@ -20,15 +20,15 @@ class _SetPageState extends State<SetPage> {
   void initState() {
     super.initState();
 
-    testSet();
-    testProperty();
+//    testSet();
+//    testProperty();
     testMethod();
   }
 
   void testSet() {
     Set villains = new Set();
     villains.add('Joker');
-    villains.addAll(['Lex Luther', 'Voldemort']);
+    villains.addAll(['Lex Luther', 'Voldemort','Joker']);//集的每个对象只能出现一次，不能重复
     print(villains);
   }
 
@@ -78,6 +78,7 @@ class _SetPageState extends State<SetPage> {
     print(villains.remove("A"));
     // 删除集的一些值
     villains.removeAll(["B", "C"]);
+    print(villains.toString());
     // 删除集的所有值
     villains.clear();
   }
