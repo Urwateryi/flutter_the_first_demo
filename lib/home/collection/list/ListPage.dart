@@ -144,12 +144,12 @@ class _ListPageState extends State<ListPage> {
     print(growableList);
 
     List<int> listB = [1, 2, 3, 4, 5];
-    // 移除开始下标（不包括）至结束下标（包括）内的元素
+    // 移除开始下标（包括）至结束下标（不包括）内的元素
     listB.removeRange(1, 4);
     print(listB);
 
     List<int> listA = [1, 2, 3, 4, 5];
-    // 移除并替换开始下标（不包括）至结束下标（包括）内的元素
+    // 移除并替换开始下标（包括）至结束下标（不包括）内的元素
     listA.replaceRange(1, 4, [6, 7]);
     print(listA);
 
@@ -245,9 +245,9 @@ class _ListPageState extends State<ListPage> {
 //    testGenerate();
 //    testProperty();
 //    testAdd();
-//    testDel();
+    testDel();
 //    testIteration();
 //    testQuery();
-    testChangeSomeItem();
+//    testChangeSomeItem();
   }
 }
