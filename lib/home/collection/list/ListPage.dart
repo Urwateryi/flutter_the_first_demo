@@ -66,6 +66,7 @@ class _ListPageState extends State<ListPage> {
   }
 
   //为所有元素统一赋值
+  //List.filled(int length, E fill, {bool growable: false})
   void testFilled() {
     // 为所有元素统一赋值，第一个参数为列表的长度，第二个参数为所有的值
     List fixedLengthList = new List<int>.filled(3, 44);
@@ -73,6 +74,7 @@ class _ListPageState extends State<ListPage> {
   }
 
   //用生成器给所有元素赋初始值
+  //List.generate(int length, E generator(int index), {bool growable: true})
   void testGenerate() {
     // 用生成器给所有元素赋初始值
     List fixedLengthList = new List<int>.generate(10, (int index) {

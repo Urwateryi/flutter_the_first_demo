@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:the_first_one/utils/PageUtil.dart';
 import 'list/ListPage.dart';
 import 'map/MapPage.dart';
+import 'set/SetPage.dart';
 
 List<String> typeList = ["List", "Map", "Set"];
 
@@ -26,8 +27,10 @@ class _CollectionPageState extends State<CollectionPage> {
               onTap: () {
                 if (position == 0) {
                   PageUtil().pushTo(context, ListPage());
-                } else {
+                } else if (position == 1) {
                   PageUtil().pushTo(context, MapPage());
+                } else {
+                  PageUtil().pushTo(context, SetPage());
                 }
               },
               child: Container(
