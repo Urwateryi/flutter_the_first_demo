@@ -30,6 +30,7 @@ import 'pageview/PageViewPage.dart';
 import 'database/DBPage.dart';
 import 'font/FontPage.dart';
 import 'collection/CollectionPage.dart';
+import 'pathprovider/PathProviderPage.dart';
 
 class ComponentBean {
   String name;
@@ -69,6 +70,8 @@ List<ComponentBean> contentList = <ComponentBean>[
       "BottomSheet是一个从屏幕底部滑起的列表（以显示更多的内容）。你可以调用showBottomSheet()或showModalBottomSheet弹出",
       "assets/images/illustration_18.jpg"),
   ComponentBean("GlobalKey", KeyPage(), "GlobalKeyPage",
+      "assets/images/illustration_10.jpg"),
+  ComponentBean("path_provider", PathProviderPage(), "path_provider",
       "assets/images/illustration_10.jpg"),
   ComponentBean("SnackBar", SnackBarPage(), "SnackBar",
       "assets/images/illustration_24.jpg"),
