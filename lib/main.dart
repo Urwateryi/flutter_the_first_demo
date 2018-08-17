@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart';
 import 'package:the_first_one/home/homepage.dart';
 import 'package:the_first_one/mine/minepage.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 
 void main() => runApp(Main());
 
@@ -13,15 +14,12 @@ final ThemeData kIOSTheme = ThemeData(
 );
 
 final ThemeData kDefaultTheme = ThemeData(
-  primaryIconTheme: const IconThemeData(color: Colors.white),
-  primarySwatch: Colors.blueGrey,
-  primaryColor: Colors.blueGrey,
-  accentColor: Colors.orangeAccent,
-  fontFamily: "HYQiHei-30F",
-  textTheme: TextTheme(
-
-  )
-);
+    primaryIconTheme: const IconThemeData(color: Colors.white),
+    primarySwatch: Colors.blueGrey,
+    primaryColor: Colors.blueGrey,
+    accentColor: Colors.orangeAccent,
+    fontFamily: "HYQiHei-30F",
+    textTheme: TextTheme());
 
 class Main extends StatefulWidget {
   @override
@@ -80,6 +78,16 @@ class MainState extends State<Main> {
         body: Center(child: _currentPage),
         bottomNavigationBar: botNavBar,
       ),
+      localizationsDelegates: [
+        //此处
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+      ],
+      supportedLocales: [
+        //此处
+        const Locale('zh', 'CH'),
+        const Locale('en', 'US'),
+      ],
     );
   }
 }
