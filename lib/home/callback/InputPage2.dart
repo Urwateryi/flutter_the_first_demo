@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-class InputPage extends StatefulWidget {
+class InputPage2 extends StatefulWidget {
   final String lastContent;
   final String type;
 
-  InputPage(this.lastContent, this.type);
+  InputPage2(this.lastContent, this.type);
 
   @override
-  _InputPageState createState() => _InputPageState();
+  _InputPage2State createState() => _InputPage2State();
 }
 
-class _InputPageState extends State<InputPage> {
+class _InputPage2State extends State<InputPage2> {
   String content;
 
   void onSave() {

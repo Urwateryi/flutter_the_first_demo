@@ -84,7 +84,34 @@ class ImagePage extends StatelessWidget {
                 child: Image(
                   image: AssetImage('assets/images/illustration_15.jpg'),
                 ),
-              )
+              ),
+              SizedBox(height: 20.0),
+              ClipOval(
+                child: SizedBox(
+                  width: 200.0,
+                  height: 200.0,
+                  child: Image(
+                    image: AssetImage(
+                      'assets/images/illustration_13.jpg',
+                    ),
+                    fit: BoxFit.cover,
+                  ),
+                ),
+              ),
+              SizedBox(height: 20.0),
+              ClipOval(
+                child: SizedBox(
+                  width: 350.0,
+                  height: 180.0,
+                  child: Image(
+                    image: AssetImage(
+                      'assets/images/illustration_13.jpg',
+                    ),
+                    fit: BoxFit.cover,
+                  ),
+                ),
+              ),
+              SizedBox(height: 20.0),
             ],
           ),
         ),

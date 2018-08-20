@@ -32,6 +32,7 @@ import 'font/FontPage.dart';
 import 'collection/CollectionPage.dart';
 import 'pathprovider/PathProviderPage.dart';
 import 'callback/CallBackPage.dart';
+import 'callback/CallBackPage2.dart';
 
 class ComponentBean {
   String name;
@@ -66,7 +67,7 @@ List<ComponentBean> contentList = <ComponentBean>[
   ComponentBean(
       "GridView", GridViewList(), "网格布局", "assets/images/illustration_8.jpg"),
   ComponentBean(
-      "页面传参与回调", CallBackPage(), "Navigator页面传参与回调", "assets/images/illustration_8.jpg"),
+      "页面传参与回调", CallBackPage2(), "Navigator页面传参与回调", "assets/images/illustration_8.jpg"),
   ComponentBean(
       "ButtomSheet",
       BottomSheetPage2(),
