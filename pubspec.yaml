@@ -25,6 +25,7 @@ dependencies:
   json_annotation: ^0.2.3
   shared_preferences: ^0.4.2
   path_provider: ^0.4.1
+  http: 0.12.0+2
 
 dev_dependencies:
   flutter_test:
